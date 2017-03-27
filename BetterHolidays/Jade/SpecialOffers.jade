@@ -1,7 +1,7 @@
 doctype
 html(lang="en")
     head
-        title View All Destinations - Better Holidays
+        title Special Offers - Better Holidays
         link(href='styles.css' rel='stylesheet')
         link(href='Fonts/font-awesome-4.7.0/css/font-awesome.min.css' rel='stylesheet')
         link(href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet")
@@ -16,7 +16,7 @@ html(lang="en")
                         li
                             a.menu(href="home.html") Home
                         li
-                            a(href="#")#DestDropDown.active Destinations <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            a(href="destinations.html")#DestDropDown Destinations <i class="fa fa-caret-down" aria-hidden="true"></i>
                             #Dest.DropDown    
                                     ul
                                         li
@@ -26,11 +26,11 @@ html(lang="en")
                                         li
                                             a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks
                                         li
-                                            a.Selected(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
                         li
                             a.menu(href="accommodation.html") Accomodation
                         li
-                            a.menu(href="SpecialOffers.html") Special Offers
+                            a.menu(href="#").active Special Offers
                         li
                             a.menu(href="contact.html") Contact Us
                     ul.btns
@@ -40,11 +40,11 @@ html(lang="en")
                             a.menu(href="mailto:Help@BetterHolidays.com") <i class="fa fa-envelope" aria-hidden="true"></i>
             div.SliderContainer
                 div.Slider
-                    img(src="Images/DestinationsSlider/1.jpg")
-                    img(src="Images/DestinationsSlider/2.jpg")
-                    img(src="Images/DestinationsSlider/3.jpg")
-                    img(src="Images/DestinationsSlider/4.jpg")
-                    img(src="Images/DestinationsSlider/1.jpg")
+                    img(src="/Images/DestinationsSlider/1.jpg")
+                    img(src="/Images/DestinationsSlider/2.jpg")
+                    img(src="/Images/DestinationsSlider/3.jpg")
+                    img(src="/Images/DestinationsSlider/4.jpg")
+                    img(src="/Images/DestinationsSlider/1.jpg")
             Div.MsgPopup.Hidden
                 .Help
                     i#CloseHelpPopup(class="fa fa-times-circle" aria-hidden="true")
@@ -57,69 +57,64 @@ html(lang="en")
             div.HelpBtn.Show
                   h3 Help
                   i(class="fa fa-question-circle" aria-hidden="true")
-            .DestNav
-                ul
-                    li.active
-                        p All
-                    li
-                        p Summer Sun
-                    li
-                        p Winter Sun
-                    li
-                        p City Breaks
-            div.allDests
+            .SpecialOffers
+                h1 Special Offers
                 .Picks
                     .itemPicks
-                        div#Sorrento.item
+                        div#BlueTrain.item
                             div.onHover
-                            h1 Sorrento
-                            p Located in Campania, Southern Italy, Sorrento is a town characterized by beautiful architecture and many restaurants and cafes as well as shops that mainly cater to tourists.
-                            img(src="Images/sorrento.jpg")
-                        div#CaribeanIslands.item
+                            h1 Blue Train
+                            p Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.  Guests can expect personal and attentive service, a dedicated butler, sumptuous accommodation, sublime fine-dining and exquisite wines.
+                            img(src="Images/BlueTrain.jpg")
+                        div#FrenchCoastalBreak.item
                             div.onHover
-                            h1 Caribbean Islands
-                            p Tourism is the main economic booster of the Caribbean. All of its islands have their own specialties to offer such as sailing, scuba diving, swimming with dolphins and surfing.
-                            img(src="Images/CaribeanIslands.jpg")
+                            h1 French Coastal Break
+                            p The southwestern seaside town of Biarritz provides a more laid back character than those on the Cote D’Azur, yet it still exudes charm and style. Resting on the French/Spanish border the town was often frequented by the Empress Eugenia de Montijo and her husband Napoleon III in the mid-19th century giving rise to its more glamorous status.
+                            img(src="Images/Biarritz.jpg")
                             div.onHover
-                        div#SanFrancisco.item
+                        div#Dubrovnik.item
                             div.onHover
-                            h1 San Francisco
-                            p It is hard to imagine how a compact city like San Francisco can house a multitude of attractions raging from scenic natural wonders to highly-preserved Victorian architecture.
-                            img(src="Images/SanFrancisco.jpg")
-                        div#LakeLouise.item
+                            h1 Dubrovnik Summer Break
+                            p Located on the Adriatic coast, Dubrovnik is a popular Mediterranean destination; a beautiful, sea port city with an illustrious past, where fortified walls of the Old Town trace their way to an enchanting coastline and orange tiled rooftops glow against a backdrop of deep blue sea.
+                            img(src="Images/DubrovnikSummer.jpg")
+                        div#LFrench.item
                             div.onHover
-                            h1 Lake Louise
-                            p Alberta, Canada is blessed with natural wonders, one of which is the Alberta Rockies Region where the world-famous Banff National Park sits.
-                            img(src="Images/LakeLouise.jpg")
-                        div#London.item
+                            h1 LFrench Riviera Break
+                            p Nice delights the visitor with its flower market, stunning coastline, beachfront bars and fabulous shopping. It is the unofficial capital of the Cote d’Azure, or as it is widely known, the French Riviera.
+                            img(src="Images/Nice.jpg")
+                        div#LuxuryPortoCity.item
                             div.onHover
-                            h1 London
-                            p London is one of the most visited capitals in Europe, with visitors from across the globe keen to get a glimpse of its many famous sights.
-                            img(src="Images/London.jpg")
-                        div#Singapore.item
+                            h1 Luxury Porto City Break
+                            p Very much a waterside city, colourful Porto rises steeply from the River Douro which lies at its heart. Impressive bridges, including the Ponte Dona Maria designed by Gustave Eiffel, crisscross the water while traditional boats glide serenely beneath. Nearby the Atlantic Ocean beckons, where the upmarket suburb of Fos offers a seafront stroll between crashing surf and verdant palm trees.
+                            img(src="Images/LuxuryPorto.jpg")
+                        div#FranceNearParis.item
                             div.onHover
-                            h1 Singapore
-                            p Singapore is a famous port city well known for its roles it plays in the global economy especially in Asia. Singapore is also a title of a country and of course its capital city is the port city of Singapore. 
-                            img(src="Images/Singapore.jpg")
-                        
+                            h1 France Near Paris May
+                            p Once discovered, never forgotten, the hidden charms of the Aisne Valley, with its gently flowing rivers and sleepy towns, is all the more enchanting because less than 90 minutes away lies the thrills of Disneyland Paris and the big-city sights of Paris itself!
+                            img(src="Images/FranceNearParis.jpg")
                     br
                     br
-                .NavTopPicks
+                .NavSpecialOffers
                     ul
                         li
-                            i(class="fa fa-circle Tbtn1 activebtn" aria-hidden="true")
+                            i(class="fa fa-circle Sbtn1 activebtn" aria-hidden="true")
                         li
-                            i(class="fa fa-circle Tbtn2" aria-hidden="true")
+                            i(class="fa fa-circle Sbtn2" aria-hidden="true")
                         li
-                            i(class="fa fa-circle Tbtn3" aria-hidden="true")    
+                            i(class="fa fa-circle Sbtn3" aria-hidden="true")    
                         li
-                            i(class="fa fa-circle Tbtn4" aria-hidden="true")
+                            i(class="fa fa-circle Sbtn4" aria-hidden="true")
                         li
-                            i(class="fa fa-circle Tbtn5" aria-hidden="true")
+                            i(class="fa fa-circle Sbtn5" aria-hidden="true")
                         li
-                            i(class="fa fa-circle Tbtn6" aria-hidden="true")    
+                            i(class="fa fa-circle Sbtn6" aria-hidden="true")  
+                    br
+                    br
+                    a(href="#")#ReadMore See more Special Offers Here!
+                    br
+                    br
             footer
                 p.Disclaimer.container <strong><em>Disclaimer:</em></strong> The text and images are not mine. This website is solely for showing of my coding skills and not my advertising skills for holidays. The text and images are sourced from other websites who own the copyright to them.
                 p Et dolore et sit ut vero. Elitr ad tempor diam dolor assum et sit. Luptatum diam dolor. Rebum sea accumsan eos gubergren eos consequat dolore labore. Takimata aliquyam at sit et autem. Tempor elitr labore sit eirmod rebum vero. Ipsum eu sea facilisis. Ipsum vel eos vero amet voluptua. Et amet at. At sadipscing dolore duo volutpat at et elitr diam ut ullamcorper. Minim iriure aliquyam rebum lorem tempor vel. Aliquyam luptatum at. Facilisis et te nobis autem nonumy et volutpat voluptua dolore aliquip. Vero lorem elitr eos dolor. Dolore sadipscing consectetuer congue tation diam sadipscing et. Nonummy duo voluptua diam et. Clita nulla dolor est amet eirmod blandit consetetur vero. Est aliquam nulla ipsum lorem suscipit esse vel consetetur vulputate. Assum diam ipsum clita nostrud in justo. Gubergren lobortis no est no rebum invidunt. Sit aliquyam invidunt diam consequat takimata. Accusam sanctus. Amet voluptua qui velit erat lorem takimata. 
-                script(src="Jquery3.1.1/jquery-3.1.1.min.js" rel="script")
+                script(src="/Jquery3.1.1/jquery-3.1.1.min.js" rel="script")
                 script(src="js.js" rel="script")

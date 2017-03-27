@@ -1,4 +1,5 @@
 $(function() {
+    "Use Strict"
     $(document).ready(function() {
         var $HelpPopup = $(".MsgPopup")
         var $HelpBtn = $(".HelpBtn")
@@ -60,5 +61,75 @@ $(function() {
                 }
             });
         }, $pause);
+        var $CommentSection = $(".CommentSectionMobile")
+        var $Comments = $(".CommentSectionMobile .topComments")
+
+        $(".Cbtn1").on("click", function() {
+            Scroll("Cbtn", "1", 3, $CommentSection, $Comments, "0")
+        });
+        $(".Cbtn2").on("click", function() {
+            Scroll("Cbtn", "2", 3, $CommentSection, $Comments, "-100vw")
+        });
+        $(".Cbtn3").on("click", function() {
+            Scroll("Cbtn", "3", 3, $CommentSection, $Comments, "-200vw")
+        });
+
+
+
+        var $topPicks = $(".topPicks")
+        var $TPicks = $(".topPicks > .Picks")
+        $(".Tbtn1").on("click", function() {
+            Scroll("Tbtn", "1", 6, $topPicks, $TPicks, "0")
+        });
+        $(".Tbtn2").on("click", function() {
+            Scroll("Tbtn", "2", 6, $topPicks, $TPicks, "-100vw")
+        });
+        $(".Tbtn3").on("click", function() {
+            Scroll("Tbtn", "3", 6, $topPicks, $TPicks, "-200vw")
+        });
+        $(".Tbtn4").on("click", function() {
+            Scroll("Tbtn", "4", 6, $topPicks, $TPicks, "-300vw")
+        });
+        $(".Tbtn5").on("click", function() {
+            Scroll("Tbtn", "5", 6, $topPicks, $TPicks, "-400vw")
+        });
+        $(".Tbtn6").on("click", function() {
+            Scroll("Tbtn", "6", 6, $topPicks, $TPicks, "-500vw")
+        });
+
+        var $SpecialOffers = $(".SpecialOffers")
+        var $SPicks = $(".SpecialOffers > .Picks")
+        $(".Sbtn1").on("click", function() {
+            Scroll("Sbtn", "1", 6, $SpecialOffers, $SPicks, "0")
+        });
+        $(".Sbtn2").on("click", function() {
+            Scroll("Sbtn", "2", 6, $SpecialOffers, $SPicks, "-100vw")
+        });
+        $(".Sbtn3").on("click", function() {
+            Scroll("Sbtn", "3", 6, $SpecialOffers, $SPicks, "-200vw")
+        });
+        $(".Sbtn4").on("click", function() {
+            Scroll("Sbtn", "4", 6, $SpecialOffers, $SPicks, "-300vw")
+        });
+        $(".Sbtn5").on("click", function() {
+            Scroll("Sbtn", "5", 6, $SpecialOffers, $SPicks, "-400vw")
+        });
+        $(".Sbtn6").on("click", function() {
+            Scroll("Sbtn", "6", 6, $SpecialOffers, $SPicks, "-500vw")
+        });
+
+        Scroll = function(btn, btnNum, NumInList, Section, Animate, Move) {
+            var btnPressed = "." + btn + btnNum
+            Animate.animate({
+                marginLeft: Move,
+            }, 400, function() {
+                for (i = 1; i < NumInList + 1; i++)(
+                    $(" ." + btn + i).removeClass("activebtn")
+                )
+
+                Section + $(btnPressed).addClass("activebtn")
+            });
+        }
+
     });
 });

@@ -1,0 +1,167 @@
+doctype
+html(lang="en")
+    head
+        title Special Offers - Better Holidays
+        link(href='styles.css' rel='stylesheet')
+        link(href='Fonts/font-awesome-4.7.0/css/font-awesome.min.css' rel='stylesheet')
+        link(href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    body
+        div#MainBody
+            div#nav.fixed
+                    ul.links
+                        li
+                            a.menu(href="home.html") Home
+                        li
+                            a(href="destinations.html")#DestDropDown Destinations <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            #Dest.DropDown    
+                                    ul
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Summer Sun
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
+                        li
+                            a.menu(href="#").active Accomodation
+                        li
+                            a.menu(href="SpecialOffers.html") Special Offers
+                        li
+                            a.menu(href="contact.html") Contact Us
+                    ul.btns
+                        li
+                            a.menu(href="https://twitter.com/" target="_blank") <i class="fa fa-twitter" aria-hidden="true"></i>
+                        li
+                            a.menu(href="mailto:Help@BetterHolidays.com") <i class="fa fa-envelope" aria-hidden="true"></i>
+            div.SliderContainer
+                div.Slider
+                    img(src="/Images/DestinationsSlider/1.jpg")
+                    img(src="/Images/DestinationsSlider/2.jpg")
+                    img(src="/Images/DestinationsSlider/3.jpg")
+                    img(src="/Images/DestinationsSlider/4.jpg")
+                    img(src="/Images/DestinationsSlider/1.jpg")
+            Div.MsgPopup.Hidden
+                .Help
+                    i#CloseHelpPopup(class="fa fa-times-circle" aria-hidden="true")
+                    img(src="Images/7043dd1b121f1a9fa077caa6961fccc1.jpeg")
+                    h3 Luke Travis
+                    h5 Offline
+                p Hi! If you need any help don't hesitate to message me and I will get back to you as soon as I can!
+                h4.message Message:
+                textarea(rows="6" placeholder="Message")
+            div.HelpBtn.Show
+                  h3 Help
+                  i(class="fa fa-question-circle" aria-hidden="true")
+            .Accommodation
+                h1 Select A Destination
+                .Picks
+                    .itemPicks
+                        div#Tenerife.item
+                            div.onHover
+                            h1 Tenerife
+                        div#Benidorm.item
+                            div.onHover
+                            h1 Benidorm
+                        div#Lanzarote.item
+                            div.onHover
+                            h1 Lanzarote
+                        div#grancanaria.item
+                            div.onHover
+                            h1 Gran Canaria
+                        div#Manjorca.item
+                            div.onHover
+                            h1 Manjorca
+                        div#Algarva.item
+                            div.onHover
+                            h1 Algarva
+                        div#Fuertventura.item
+                            div.onHover
+                            h1 Fuertventura
+                        div#CostaBlanca.item
+                            div.onHover
+                            h1 Costa Blanca
+                    br
+                    br
+                .NavTopPicks
+                    ul
+                        li
+                            i(class="fa fa-circle Sbtn1 activebtn" aria-hidden="true")
+                        li
+                            i(class="fa fa-circle Sbtn2" aria-hidden="true")
+                        li
+                            i(class="fa fa-circle Sbtn3" aria-hidden="true")    
+                        li
+                            i(class="fa fa-circle Sbtn4" aria-hidden="true")
+                        li
+                            i(class="fa fa-circle Sbtn5" aria-hidden="true")
+                        li
+                            i(class="fa fa-circle Sbtn6" aria-hidden="true")  
+                    br
+                    br
+                    h1 Select A Destination
+            .SpecialOffers
+                h1 Special Offers
+                .Picks
+                    .itemPicks
+                        div#ClubTenerife.item
+                            div.onHover
+                            h1 Club Tenerife
+                            h2 Tenerife
+                            p.Accom Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.  Guests can expect personal and attentive service, a dedicated butler, sumptuous accommodation, sublime fine-dining and exquisite wines.
+                            img(src="Images/ClubTenerife.jpg")
+                        div#VigiliaParkApartments.item
+                            div.onHover
+                            h1 VigiliaParkApartments
+                            h2 Tenerife
+                            p.Accom Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.  Guests can expect personal and attentive service, a dedicated butler, sumptuous accommodation, sublime fine-dining and exquisite wines.
+                            img(src="Images/VigiliaParkApartments.jpg")
+                        div#ClubTenerife.item
+                            div.onHover
+                            h1 Club Tenerife
+                            h2 Tenerife
+                            p.Accom Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.  Guests can expect personal and attentive service, a dedicated butler, sumptuous accommodation, sublime fine-dining and exquisite wines.
+                            img(src="Images/ClubTenerife.jpg")
+                        div#ClubTenerife.item
+                            div.onHover
+                            h1 Club Tenerife
+                            h2 Tenerife
+                            p.Accom Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.  Guests can expect personal and attentive service, a dedicated butler, sumptuous accommodation, sublime fine-dining and exquisite wines.
+                            img(src="Images/ClubTenerife.jpg")
+                        div#ClubTenerife.item
+                            div.onHover
+                            h1 Club Tenerife
+                            h2 Tenerife
+                            p.Accom Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.  Guests can expect personal and attentive service, a dedicated butler, sumptuous accommodation, sublime fine-dining and exquisite wines.
+                            img(src="Images/ClubTenerife.jpg")
+                        div#ClubTenerife.item
+                            div.onHover
+                            h1 Club Tenerife
+                            h2 Tenerife
+                            p.Accom Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.  Guests can expect personal and attentive service, a dedicated butler, sumptuous accommodation, sublime fine-dining and exquisite wines.
+                            img(src="Images/ClubTenerife.jpg")
+                    br
+                    br
+                .NavSpecialOffers
+                    ul
+                        li
+                            i(class="fa fa-circle Sbtn1 activebtn" aria-hidden="true")
+                        li
+                            i(class="fa fa-circle Sbtn2" aria-hidden="true")
+                        li
+                            i(class="fa fa-circle Sbtn3" aria-hidden="true")    
+                        li
+                            i(class="fa fa-circle Sbtn4" aria-hidden="true")
+                        li
+                            i(class="fa fa-circle Sbtn5" aria-hidden="true")
+                        li
+                            i(class="fa fa-circle Sbtn6" aria-hidden="true")  
+                footer
+                p.Disclaimer.container <strong><em>Disclaimer:</em></strong> The text and images are not mine. This website is solely for showing of my coding skills and not my advertising skills for holidays. The text and images are sourced from other websites who own the copyright to them.
+                p Et dolore et sit ut vero. Elitr ad tempor diam dolor assum et sit. Luptatum diam dolor. Rebum sea accumsan eos gubergren eos consequat dolore labore. Takimata aliquyam at sit et autem. Tempor elitr labore sit eirmod rebum vero. Ipsum eu sea facilisis. Ipsum vel eos vero amet voluptua. Et amet at. At sadipscing dolore duo volutpat at et elitr diam ut ullamcorper. Minim iriure aliquyam rebum lorem tempor vel. Aliquyam luptatum at. Facilisis et te nobis autem nonumy et volutpat voluptua dolore aliquip. Vero lorem elitr eos dolor. Dolore sadipscing consectetuer congue tation diam sadipscing et. Nonummy duo voluptua diam et. Clita nulla dolor est amet eirmod blandit consetetur vero. Est aliquam nulla ipsum lorem suscipit esse vel consetetur vulputate. Assum diam ipsum clita nostrud in justo. Gubergren lobortis no est no rebum invidunt. Sit aliquyam invidunt diam consequat takimata. Accusam sanctus. Amet voluptua qui velit erat lorem takimata. 
+                script(src="/Jquery3.1.1/jquery-3.1.1.min.js" rel="script")
+                script(src="js.js" rel="script")
