@@ -828,7 +828,7 @@ body.ContactPage {
   background-size: cover; }
 
 .Contact {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.55);
   padding-top: 10px; }
   .Contact h1 {
     margin: 10px 0;
@@ -880,7 +880,7 @@ footer {
     font-size: .95em;
     color: #999; }
   footer.Contactfooter {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.55);
     bottom: 0; }
     footer.Contactfooter p {
       color: white; }
