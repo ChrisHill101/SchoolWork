@@ -423,7 +423,10 @@ a {
       width: 70%; }
       .topPicks .Picks .itemPicks .item p,
       .SpecialOffers .Picks .itemPicks .item p {
-        padding: 45px 10px 0 10px; } }
+        padding: 45px 10px 0 10px; }
+      .topPicks .Picks .itemPicks #LuxuryPortoCity,
+      .SpecialOffers .Picks .itemPicks #LuxuryPortoCity {
+        font-size: .85em; } }
 
 @media (max-width: 1388px) {
   .topPicks,
@@ -437,7 +440,10 @@ a {
         top: 0; }
         .topPicks .Picks .itemPicks .item p,
         .SpecialOffers .Picks .itemPicks .item p {
-          padding: 45px 10px 0 10px; } }
+          padding: 45px 10px 0 10px; }
+        .topPicks .Picks .itemPicks #LuxuryPortoCity,
+        .SpecialOffers .Picks .itemPicks #LuxuryPortoCity {
+          font-size: 1em; } }
 
 @media (max-width: 1084px) {
   .topPicks,
@@ -445,7 +451,10 @@ a {
     font-size: .8em; }
     .topPicks .Picks .itemPicks .item p,
     .SpecialOffers .Picks .itemPicks .item p {
-      padding: 45px 10px 0 10px; } }
+      padding: 45px 10px 0 10px; }
+    .topPicks .Picks .itemPicks #LuxuryPortoCity,
+    .SpecialOffers .Picks .itemPicks #LuxuryPortoCity {
+      font-size: 1em; } }
 
 .onHover {
   z-index: 2;
@@ -471,6 +480,7 @@ a {
   text-align: center; }
 
 .topComments {
+  position: relative;
   width: 65%;
   margin: 20px auto;
   display: -webkit-flex;
@@ -524,6 +534,13 @@ a {
       transition: all 0.15s; }
       .topComments .Comment i:hover {
         color: #00aaff; }
+  .topComments .NavComments {
+    position: absolute;
+    font-size: 1.3em;
+    top: 0px;
+    left: 670px; }
+    .topComments .NavComments ul {
+      list-style: none; }
 
 @media (max-width: 1600px) {
   .CommentSection {
@@ -531,6 +548,12 @@ a {
   h1.CommentsTitle,
   .topComments {
     width: 80%; } }
+
+@media (max-width: 1440px) {
+  .topComments {
+    width: 300%; }
+    .topComments .Comment {
+      width: 500px; } }
 
 @media (max-width: 1250px) {
   .CommentSection {

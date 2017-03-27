@@ -343,6 +343,8 @@ a
                 .item
                     p
                         padding: 45px 10px 0 10px
+                #LuxuryPortoCity
+                    font-size: .85em
 @media (max-width: 1388px)
     .topPicks,
     .SpecialOffers,
@@ -353,6 +355,8 @@ a
                 .item
                     p
                         padding: 45px 10px 0 10px
+                #LuxuryPortoCity
+                    font-size: 1em
                 top: 0
 @media (max-width: 1084px)
     .topPicks,
@@ -363,6 +367,8 @@ a
                 .item
                     p
                         padding: 45px 10px 0 10px
+                #LuxuryPortoCity
+                    font-size: 1em
 .onHover
     z-index: 2
     cursor: pointer
@@ -383,6 +389,7 @@ a
 .CommentsTitle
     text-align: center
 .topComments
+    position: relative
     width: 65%
     margin: 20px auto
     display: flex
@@ -430,12 +437,24 @@ a
             +transition(all .15s)
             &:hover
                 color: #00aaff
+    .NavComments
+        ul 
+            list-style: none
+        position: absolute
+        font-size: 1.3em
+        top: 0px
+        left: (670px)
 @media (max-width: 1600px)
     .CommentSection
         font-size: .85em
     h1.CommentsTitle,
     .topComments
         width: 80%
+@media (max-width: 1440px)
+    .topComments
+        width: 300%
+        .Comment
+            width: 500px
 @media (max-width: 1250px)
     .CommentSection
         font-size: .8em
