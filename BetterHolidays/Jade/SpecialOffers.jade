@@ -28,7 +28,17 @@ html(lang="en")
                                         li
                                             a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
                         li
-                            a.menu(href="accommodation.html") Accomodation
+                            a#AccomDropDown(href="accommodation.html") Accomodation <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            #Accom.DropDown    
+                                    ul
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Hostel
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks
+                                        li
+                                            a.Selected(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
                         li
                             a.menu(href="#").active Special Offers
                         li

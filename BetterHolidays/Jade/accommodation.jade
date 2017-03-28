@@ -28,7 +28,17 @@ html(lang="en")
                                         li
                                             a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
                         li
-                            a.menu(href="#").active Accomodation
+                            a#AccomDropDown(href="accommodation.html").active Accomodation <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            #Accom.DropDown    
+                                    ul
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Hostel
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun
+                                        li
+                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks
+                                        li
+                                            a.Selected(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
                         li
                             a.menu(href="SpecialOffers.html") Special Offers
                         li
@@ -57,6 +67,16 @@ html(lang="en")
             div.HelpBtn.Show
                   h3 Help
                   i(class="fa fa-question-circle" aria-hidden="true")
+            .AccomNav
+                ul
+                    li.active
+                        p All
+                    li
+                        p Hostels
+                    li
+                        p B&B
+                    li
+                        p Hotel
             .Accommodation
                 h1 Select A Destination
                 .Picks
@@ -103,9 +123,8 @@ html(lang="en")
                             i(class="fa fa-circle Sbtn6" aria-hidden="true")  
                     br
                     br
-                    h1 Select A Destination
             .SpecialOffers
-                h1 Special Offers
+                h1 Select A Hotel
                 .Picks
                     .itemPicks
                         div#ClubTenerife.item

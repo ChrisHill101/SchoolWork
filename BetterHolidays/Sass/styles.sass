@@ -31,6 +31,10 @@ body
     #Banner
         position: absolute
         z-index: 1
+
+    .Slider
+        overflow: hidden
+        padding-top: 10px
 .Intro
     h1
         font-size: 2.3em
@@ -74,9 +78,32 @@ a
             display: block
         &:hover ~ #Dest ul
             display: block
+    #AccomDropDown
+        display: inline-block
+        position: relative
+        cursor: pointer
+        color: #00aaff
+        padding: 16px 20px
+        margin: -16px 0
+        +transition(all .3s)
+        i
+            margin-left: 4px
+            position: relative
+            +transition(all .3s)
+        &:hover > i
+                transform: translateY(5px) scale(1.2)
+        &:hover ~ #Accom li
+            @for $i from 1 through 4
+                &:nth-child(#{$i})
+                    animation: MainMenu (300ms*$i) ease-in-out forwards
+        &:hover ~ #Accom
+            display: block
+        &:hover ~ #Accom ul
+            display: block
     li
         position: relative
-    #Dest
+    #Dest,
+    #Accom
         &:hover
             display: block
         display: none
@@ -274,7 +301,8 @@ a
         padding: 0
         display: inline-block
         border-bottom: 6px solid #333
-.DestNav
+.DestNav,
+.AccomNav
     font-size: 1.3em
     ul 
         text-align: center
@@ -368,7 +396,6 @@ a
         max-width: 100%
         margin-bottom: -7px
         +transition(all 10s ease)
-.Accommodation
     text-align: center
     .Picks
         width: 70%
@@ -381,12 +408,8 @@ a
                 background-image: url("Images/Tenerife.jpg")
             #Benidorm
                 background-image: url("Images/Benidorm.jpg")
-            #Lanzarote
-                background-image: url("Images/Lanzarote.jpg")
             #Tenerife
                 background-image: url("Images/Tenerife.jpg")
-            #grancanaria
-                background-image: url("Images/grancanaria.jpg")
             #Manjorca
                 background-image: url("Images/Manjorca.jpg")
             #Algarva
