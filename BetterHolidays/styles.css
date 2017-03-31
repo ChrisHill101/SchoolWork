@@ -548,42 +548,82 @@ a {
       .SpecialOffers .Picks .itemPicks #Tenerife,
       .allDests .Picks .itemPicks #Tenerife {
         background-image: url("Images/Tenerife.jpg"); }
+        .topPicks .Picks .itemPicks #Tenerife img,
+        .SpecialOffers .Picks .itemPicks #Tenerife img,
+        .allDests .Picks .itemPicks #Tenerife img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #Benidorm,
       .SpecialOffers .Picks .itemPicks #Benidorm,
       .allDests .Picks .itemPicks #Benidorm {
         background-image: url("Images/Benidorm.jpg"); }
+        .topPicks .Picks .itemPicks #Benidorm img,
+        .SpecialOffers .Picks .itemPicks #Benidorm img,
+        .allDests .Picks .itemPicks #Benidorm img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #Tenerife,
       .SpecialOffers .Picks .itemPicks #Tenerife,
       .allDests .Picks .itemPicks #Tenerife {
         background-image: url("Images/Tenerife.jpg"); }
+        .topPicks .Picks .itemPicks #Tenerife img,
+        .SpecialOffers .Picks .itemPicks #Tenerife img,
+        .allDests .Picks .itemPicks #Tenerife img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #Manjorca,
       .SpecialOffers .Picks .itemPicks #Manjorca,
       .allDests .Picks .itemPicks #Manjorca {
         background-image: url("Images/Manjorca.jpg"); }
+        .topPicks .Picks .itemPicks #Manjorca img,
+        .SpecialOffers .Picks .itemPicks #Manjorca img,
+        .allDests .Picks .itemPicks #Manjorca img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #Algarva,
       .SpecialOffers .Picks .itemPicks #Algarva,
       .allDests .Picks .itemPicks #Algarva {
         background-image: url("Images/Algarva.jpg"); }
+        .topPicks .Picks .itemPicks #Algarva img,
+        .SpecialOffers .Picks .itemPicks #Algarva img,
+        .allDests .Picks .itemPicks #Algarva img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #Fuertventura,
       .SpecialOffers .Picks .itemPicks #Fuertventura,
       .allDests .Picks .itemPicks #Fuertventura {
         background-image: url("Images/Fuertventura.jpg"); }
+        .topPicks .Picks .itemPicks #Fuertventura img,
+        .SpecialOffers .Picks .itemPicks #Fuertventura img,
+        .allDests .Picks .itemPicks #Fuertventura img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #CostaBlanca,
       .SpecialOffers .Picks .itemPicks #CostaBlanca,
       .allDests .Picks .itemPicks #CostaBlanca {
         background-image: url("Images/CostaBlanca.jpg"); }
+        .topPicks .Picks .itemPicks #CostaBlanca img,
+        .SpecialOffers .Picks .itemPicks #CostaBlanca img,
+        .allDests .Picks .itemPicks #CostaBlanca img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #ChalethotelRosanna,
       .SpecialOffers .Picks .itemPicks #ChalethotelRosanna,
       .allDests .Picks .itemPicks #ChalethotelRosanna {
         background-image: url("Images/Chalerhotel.jpg"); }
+        .topPicks .Picks .itemPicks #ChalethotelRosanna img,
+        .SpecialOffers .Picks .itemPicks #ChalethotelRosanna img,
+        .allDests .Picks .itemPicks #ChalethotelRosanna img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #Cervinia,
       .SpecialOffers .Picks .itemPicks #Cervinia,
       .allDests .Picks .itemPicks #Cervinia {
         background-image: url("Images/cervinia-2014-642x336.jpg"); }
+        .topPicks .Picks .itemPicks #Cervinia img,
+        .SpecialOffers .Picks .itemPicks #Cervinia img,
+        .allDests .Picks .itemPicks #Cervinia img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks #WhistlerBlackcomb,
       .SpecialOffers .Picks .itemPicks #WhistlerBlackcomb,
       .allDests .Picks .itemPicks #WhistlerBlackcomb {
         background-image: url("Images/WhistlerBlackcomb.jpg"); }
+        .topPicks .Picks .itemPicks #WhistlerBlackcomb img,
+        .SpecialOffers .Picks .itemPicks #WhistlerBlackcomb img,
+        .allDests .Picks .itemPicks #WhistlerBlackcomb img {
+          opacity: 0; }
       .topPicks .Picks .itemPicks .item,
       .SpecialOffers .Picks .itemPicks .item,
       .allDests .Picks .itemPicks .item {
@@ -591,7 +631,6 @@ a {
         background-size: cover;
         min-width: 320px;
         width: 30%;
-        max-height: 300px;
         position: relative;
         overflow: hidden;
         z-index: 1;
