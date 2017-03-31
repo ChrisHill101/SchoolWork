@@ -1,287 +1,331 @@
-doctype
-
-html(lang="en")
-    head
-        title Home - Better Holidays
-        link(href='styles.css' rel='stylesheet')
-        link(href='Fonts/font-awesome-4.7.0/css/font-awesome.min.css' rel='stylesheet')
-        link(href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-
-    body
-        div.banner
-            div.content
-                img#Banner(src="Images/banner.png")
-                .SliderContainer
-                    .Slider
-                        img#BannerBg(src="Images/bannerbg1.png")
-                        img#BannerBg(src="Images/bannerbg2.png")
-                        img#BannerBg(src="Images/bannerbg3.png")
-                        img#BannerBg(src="Images/bannerbg4.png")
-                        img#BannerBg(src="Images/bannerbg1.png")
-        
-        div#MainBody
-            div#nav
-                    ul.links
-                        li
-                            a.menu(href="#").active Home
-                        li
-                            a(href="destinations.html")#DestDropDown Destinations <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            #Dest.DropDown    
-                                    ul
-                                        li
-                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Summer Sun
-                                        li
-                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun
-                                        li
-                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks
-                                        li
-                                            a(href="destinations.html") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
-                        li
-                            a#AccomDropDown(href="accommodation.html") Accomodation <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            #Accom.DropDown    
-                                    ul
-                                        li
-                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Hostel
-                                        li
-                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun
-                                        li
-                                            a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks
-                                        li
-                                            a.Selected(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
-                        li
-                            a.menu(href="SpecialOffers.html") Special Offers
-                        li
-                            a.menu(href="contact.html") Contact Us
-                    ul.btns
-                        li
-                            a.menu(href="https://twitter.com/" target="_blank") <i class="fa fa-twitter" aria-hidden="true"></i>
-                        li
-                            a.menu(href="mailto:Help@BetterHolidays.com") <i class="fa fa-envelope" aria-hidden="true"></i>
-            div.Intro.container
-                h1 WELCOME TO BETTER HOLIDAYS
-                p Better Holidays has been creating dream holidays for over 25 years. If you’re searching for a romantic getaway, honeymoon, cruise, a business trip or you just want a fabulous family holiday, we’re here to make your trip easy and memorable.
-                p Our expert, multi-award winning team will ensure your holiday is exactly what you want, providing in-depth travel knowledge, personal recommendations and the best possible price. So go on… discover something new!
-            Div.MsgPopup.Main
-                .Help
-                    i#CloseHelpPopup(class="fa fa-times-circle" aria-hidden="true")
-                    img(src="Images/7043dd1b121f1a9fa077caa6961fccc1.jpeg")
-                    h3 Luke Travis
-                    h5 Offline
-                p Hi! If you need any help don't hesitate to message me and I will get back to you as soon as I can!
-                h4.message Message:
-                textarea(rows="6" placeholder="Message")
-            div.HelpBtn
-                  h3 Help
-                  i(class="fa fa-question-circle" aria-hidden="true")
-            div.topPicks
-                h1 Top Picks
-                .Picks
-                    .itemPicks
-                        div#Sorrento.item
-                            div.onHover
-                            h1 Sorrento
-                            p Located in Campania, Southern Italy, Sorrento is a town characterized by beautiful architecture and many restaurants and cafes as well as shops that mainly cater to tourists.
-                            img(src="Images/sorrento.jpg")
-                        div#CaribeanIslands.item
-                            div.onHover
-                            h1 Caribbean Islands
-                            p Tourism is the main economic booster of the Caribbean. All of its islands have their own specialties to offer such as sailing, scuba diving, swimming with dolphins and surfing.
-                            img(src="Images/CaribeanIslands.jpg")
-                            div.onHover
-                        div#SanFrancisco.item
-                            div.onHover
-                            h1 San Francisco
-                            p It is hard to imagine how a compact city like San Francisco can house a multitude of attractions raging from scenic natural wonders to highly-preserved Victorian architecture.
-                            img(src="Images/SanFrancisco.jpg")
-                        div#LakeLouise.item
-                            div.onHover
-                            h1 Lake Louise
-                            p Alberta, Canada is blessed with natural wonders, one of which is the Alberta Rockies Region where the world-famous Banff National Park sits.
-                            img(src="Images/LakeLouise.jpg")
-                        div#London.item
-                            div.onHover
-                            h1 London
-                            p London is one of the most visited capitals in Europe, with visitors from across the globe keen to get a glimpse of its many famous sights.
-                            img(src="Images/London.jpg")
-                        div#Singapore.item
-                            div.onHover
-                            h1 Singapore
-                            p Singapore is a famous port city well known for its roles it plays in the global economy especially in Asia. Singapore is also a title of a country and of course its capital city is the port city of Singapore. 
-                            img(src="Images/Singapore.jpg")
-                    br
-                    br
-                .NavTopPicks
-                    ul
-                        li
-                            i(class="fa fa-circle Tbtn1 activebtn" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Tbtn2" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Tbtn3" aria-hidden="true")    
-                        li
-                            i(class="fa fa-circle Tbtn4" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Tbtn5" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Tbtn6" aria-hidden="true")    
-                    br
-                    br
-                    a(href="destinations.html")#ReadMore See more Destinations Here!
-                    br
-                    br
-            .SpecialOffers
-                h1 Special Offers
-                .Picks
-                    .itemPicks
-                        div#BlueTrain.item
-                            div.onHover
-                            h1 Blue Train
-                            p Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.  Guests can expect personal and attentive service, a dedicated butler, sumptuous accommodation, sublime fine-dining and exquisite wines.
-                            img(src="Images/BlueTrain.jpg")
-                        div#FrenchCoastalBreak.item
-                            div.onHover
-                            h1 French Coastal Break
-                            p The southwestern seaside town of Biarritz provides a more laid back character than those on the Cote D’Azur, yet it still exudes charm and style. Resting on the French/Spanish border the town was often frequented by the Empress Eugenia de Montijo and her husband Napoleon III in the mid-19th century giving rise to its more glamorous status.
-                            img(src="Images/Biarritz.jpg")
-                            div.onHover
-                        div#Dubrovnik.item
-                            div.onHover
-                            h1 Dubrovnik Summer Break
-                            p Located on the Adriatic coast, Dubrovnik is a popular Mediterranean destination; a beautiful, sea port city with an illustrious past, where fortified walls of the Old Town trace their way to an enchanting coastline and orange tiled rooftops glow against a backdrop of deep blue sea.
-                            img(src="Images/DubrovnikSummer.jpg")
-                        div#LFrench.item
-                            div.onHover
-                            h1 LFrench Riviera Break
-                            p Nice delights the visitor with its flower market, stunning coastline, beachfront bars and fabulous shopping. It is the unofficial capital of the Cote d’Azure, or as it is widely known, the French Riviera.
-                            img(src="Images/Nice.jpg")
-                        div#LuxuryPortoCity.item
-                            div.onHover
-                            h1 Luxury Porto City Break
-                            p Very much a waterside city, colourful Porto rises steeply from the River Douro which lies at its heart. Impressive bridges, including the Ponte Dona Maria designed by Gustave Eiffel, crisscross the water while traditional boats glide serenely beneath. Nearby the Atlantic Ocean beckons, where the upmarket suburb of Fos offers a seafront stroll between crashing surf and verdant palm trees.
-                            img(src="Images/LuxuryPorto.jpg")
-                        div#FranceNearParis.item
-                            div.onHover
-                            h1 France Near Paris May
-                            p Once discovered, never forgotten, the hidden charms of the Aisne Valley, with its gently flowing rivers and sleepy towns, is all the more enchanting because less than 90 minutes away lies the thrills of Disneyland Paris and the big-city sights of Paris itself!
-                            img(src="Images/FranceNearParis.jpg")
-                    br
-                    br
-                .NavSpecialOffers
-                    ul
-                        li
-                            i(class="fa fa-circle Sbtn1 activebtn" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Sbtn2" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Sbtn3" aria-hidden="true")    
-                        li
-                            i(class="fa fa-circle Sbtn4" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Sbtn5" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Sbtn6" aria-hidden="true")  
-                    br
-                    br
-                    a(href="#")#ReadMore See more Special Offers Here!
-                    br
-                    br
-            div.CommentSection
-                h1 Top Comments
-                div.topComments
-                    div.Comment
-                        img(src="Images/Customers/l3wwN-l-.jpeg")
-                        h2 Christopher Hall
-                        h4 Stayed in:
-                        p.place Gran Hotel Sol Y Mar, Calpe, Benidorm
-                        p Great hotel, stayed there three times now.Facilities excellent, staff very helpful. only negative was the wifi was patchy with so many people using it.
-                        div.ratings
-                            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
-                            p.rate 21
-                            <i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>
-                            p.rate 1
-                            <i class="fa fa-share fa-2x" aria-hidden="true"></i>
-                            p.rate 4
-                    div.Comment
-                        img(src="Images/Customers/741a0a2593ea55bbd6238f8705c7074f.jpeg")
-                        h2 James Anderson                   
-                        h4 Stayed in:
-                        p.place DoubleTree By Hilton London Excel, London
-                        p My review would have got a very good our great if it not were for the poor welcome by the two reception staff on duty on Thursday 9th @ 12pm.
-                        div.ratings
-                            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
-                            p.rate 14
-                            <i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>
-                            p.rate 2
-                            <i class="fa fa-share fa-2x" aria-hidden="true"></i>
-                            p.rate 2
-                    div.Comment
-                        img(src="Images/Customers/2AG8omMO.jpg")
-                        h2 Jessica Stubblebines
-                        h4 Stayed in:
-                        p.place Db San Antonio Hotel & Spa, Qawra, It-turisti
-                        p Spotlessly clean, the staff can't do enough for you. Food and entertainment fantastic and centrally located and easy access to buses that take you to Valetta,the capital,and all over the island.
-                        div.ratings
-                            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
-                            p.rate 7
-                            <i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>
-                            p.rate 0
-                            <i class="fa fa-share fa-2x" aria-hidden="true"></i>
-                            p.rate 1
-            div.CommentSectionMobile
-                h1 Top Comments
-                div.topComments
-                    div.Comment
-                        img(src="Images/Customers/l3wwN-l-.jpeg")
-                        h2 Christopher Hall
-                        h4 Stayed in:
-                        p.place Gran Hotel Sol Y Mar, Calpe, Benidorm
-                        p Great hotel, stayed there three times now.Facilities excellent, staff very helpful. only negative was the wifi was patchy with so many people using it.
-                        div.ratings
-                            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
-                            p.rate 21
-                            <i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>
-                            p.rate 1
-                            <i class="fa fa-share fa-2x" aria-hidden="true"></i>
-                            p.rate 4
-                    div.Comment
-                        img(src="Images/Customers/741a0a2593ea55bbd6238f8705c7074f.jpeg")
-                        h2 James Anderson                   
-                        h4 Stayed in:
-                        p.place DoubleTree By Hilton London Excel, London
-                        p My review would have got a very good our great if it not were for the poor welcome by the two reception staff on duty on Thursday 9th @ 12pm.
-                        div.ratings
-                            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
-                            p.rate 14
-                            <i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>
-                            p.rate 2
-                            <i class="fa fa-share fa-2x" aria-hidden="true"></i>
-                            p.rate 2
-                    div.Comment
-                        img(src="Images/Customers/2AG8omMO.jpg")
-                        h2 Jessica Stubblebines
-                        h4 Stayed in:
-                        p.place Db San Antonio Hotel & Spa, Qawra, It-turisti
-                        p Spotlessly clean, the staff can't do enough for you. Food and entertainment fantastic and centrally located and easy access to buses that take you to Valetta,the capital,and all over the island.
-                        div.ratings
-                            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
-                            p.rate 7
-                            <i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>
-                            p.rate 0
-                            <i class="fa fa-share fa-2x" aria-hidden="true"></i>
-                            p.rate 1
-                div.NavComments
-                    ul
-                        li
-                            i(class="fa fa-circle Cbtn1 activebtn" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Cbtn2" aria-hidden="true")
-                        li
-                            i(class="fa fa-circle Cbtn3" aria-hidden="true")
-            footer
-                p.Disclaimer.container <strong><em>Disclaimer:</em></strong> The text and images are not mine. This website is solely for showing of my coding skills and not my advertising skills for holidays. The text and images are sourced from other websites who own the copyright to them.
-                p Et dolore et sit ut vero. Elitr ad tempor diam dolor assum et sit. Luptatum diam dolor. Rebum sea accumsan eos gubergren eos consequat dolore labore. Takimata aliquyam at sit et autem. Tempor elitr labore sit eirmod rebum vero. Ipsum eu sea facilisis. Ipsum vel eos vero amet voluptua. Et amet at. At sadipscing dolore duo volutpat at et elitr diam ut ullamcorper. Minim iriure aliquyam rebum lorem tempor vel. Aliquyam luptatum at. Facilisis et te nobis autem nonumy et volutpat voluptua dolore aliquip. Vero lorem elitr eos dolor. Dolore sadipscing consectetuer congue tation diam sadipscing et. Nonummy duo voluptua diam et. Clita nulla dolor est amet eirmod blandit consetetur vero. Est aliquam nulla ipsum lorem suscipit esse vel consetetur vulputate. Assum diam ipsum clita nostrud in justo. Gubergren lobortis no est no rebum invidunt. Sit aliquyam invidunt diam consequat takimata. Accusam sanctus. Amet voluptua qui velit erat lorem takimata. 
-                script(src="Jquery3.1.1/jquery-3.1.1.min.js" rel="script")
-                script(src="js.js" rel="script")
+doctype html
+html(lang='en')
+  head
+    title Home - Better Holidays
+    link(href='styles.css', rel='stylesheet')
+    link(href='Fonts/font-awesome-4.7.0/css/font-awesome.min.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Baloo+Bhaina', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Bree+Serif', rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  body
+    .banner
+      .content
+        img#Banner(src='Images/banner.png')
+        .SliderContainer
+          .Slider
+            img#BannerBg(src='Images/bannerbg1.png')
+            img#BannerBg(src='Images/bannerbg2.png')
+            img#BannerBg(src='Images/bannerbg3.png')
+            img#BannerBg(src='Images/bannerbg4.png')
+            img#BannerBg(src='Images/bannerbg1.png')
+    #MainBody
+      #nav
+        ul.links
+          li
+            a.menu.active(href='#') Home
+          li
+            a#DestDropDown(href='destinations.html')
+              | Destinations 
+              i.fa.fa-caret-down(aria-hidden='true')
+            #Dest.DropDown
+              ul
+                li
+                  a(href='#')
+                    i.fa.fa-caret-right(aria-hidden='true')
+                    |  Summer Sun
+                li
+                  a(href='#')
+                    i.fa.fa-caret-right(aria-hidden='true')
+                    |  Winter Sun
+                li
+                  a(href='#')
+                    i.fa.fa-caret-right(aria-hidden='true')
+                    |  City Breaks
+                li
+                  a(href='destinations.html')
+                    i.fa.fa-caret-right(aria-hidden='true')
+                    |  View All
+          li
+            a#AccomDropDown(href='accommodation.html')
+              | Accomodation 
+              i.fa.fa-caret-down(aria-hidden='true')
+            #Accom.DropDown
+              ul
+                li
+                  a(href='#')
+                    i.fa.fa-caret-right(aria-hidden='true')
+                    |  Hostel
+                li
+                  a(href='#')
+                    i.fa.fa-caret-right(aria-hidden='true')
+                    |  Winter Sun
+                li
+                  a(href='#')
+                    i.fa.fa-caret-right(aria-hidden='true')
+                    |  City Breaks
+                li
+                  a.Selected(href='#')
+                    i.fa.fa-caret-right(aria-hidden='true')
+                    |  View All
+          li
+            a.menu(href='SpecialOffers.html') Special Offers
+          li
+            a.menu(href='contact.html') Contact Us
+        ul.btns
+          li
+            a.menu(href='https://twitter.com/', target='_blank')
+              i.fa.fa-twitter(aria-hidden='true')
+          li
+            a.menu(href='mailto:Help@BetterHolidays.com')
+              i.fa.fa-envelope(aria-hidden='true')
+      .Intro.container
+        h1 WELCOME TO BETTER HOLIDAYS
+        p
+          | Better Holidays has been creating dream holidays for over 25 years. If you’re searching for a romantic getaway, honeymoon, cruise, a business trip or you just want a fabulous family holiday, we’re here to make your trip easy and memorable.
+        p
+          | Our expert, multi-award winning team will ensure your holiday is exactly what you want, providing in-depth travel knowledge, personal recommendations and the best possible price. So go on… discover something new!
+      .MsgPopup.Main
+        .Help
+          i#CloseHelpPopup.fa.fa-times-circle(aria-hidden='true')
+          img(src='Images/7043dd1b121f1a9fa077caa6961fccc1.jpeg')
+          h3 Luke Travis
+          h5 Offline
+        p
+          | Hi! If you need any help don't hesitate to message me and I will get back to you as soon as I can!
+        h4.message Message:
+        textarea(rows='6', placeholder='Message')
+      .HelpBtn
+        h3 Help
+        i.fa.fa-question-circle(aria-hidden='true')
+      .topPicks
+        h1 Top Picks
+        .Picks
+          .itemPicks
+            #Sorrento.item
+              .onHover
+              h1 Sorrento
+              p
+                | Located in Campania, Southern Italy, Sorrento is a town characterized by beautiful architecture and many restaurants and cafes as well as shops that mainly cater to tourists.
+              img(src='Images/sorrento.jpg')
+            #CaribeanIslands.item
+              .onHover
+              h1 Caribbean Islands
+              p
+                | Tourism is the main economic booster of the Caribbean. All of its islands have their own specialties to offer such as sailing, scuba diving, swimming with dolphins and surfing.
+              img(src='Images/CaribeanIslands.jpg')
+              .onHover
+            #SanFrancisco.item
+              .onHover
+              h1 San Francisco
+              p
+                | It is hard to imagine how a compact city like San Francisco can house a multitude of attractions raging from scenic natural wonders to highly-preserved Victorian architecture.
+              img(src='Images/SanFrancisco.jpg')
+            #LakeLouise.item
+              .onHover
+              h1 Lake Louise
+              p
+                | Alberta, Canada is blessed with natural wonders, one of which is the Alberta Rockies Region where the world-famous Banff National Park sits.
+              img(src='Images/LakeLouise.jpg')
+            #London.item
+              .onHover
+              h1 London
+              p
+                | London is one of the most visited capitals in Europe, with visitors from across the globe keen to get a glimpse of its many famous sights.
+              img(src='Images/London.jpg')
+            #Singapore.item
+              .onHover
+              h1 Singapore
+              p
+                | Singapore is a famous port city well known for its roles it plays in the global economy especially in Asia. Singapore is also a title of a country and of course its capital city is the port city of Singapore.
+              img(src='Images/Singapore.jpg')
+          br
+          br
+        .NavTopPicks
+          ul
+            li
+              i.fa.fa-circle.Tbtn1.activebtn(aria-hidden='true')
+            li
+              i.fa.fa-circle.Tbtn2(aria-hidden='true')
+            li
+              i.fa.fa-circle.Tbtn3(aria-hidden='true')    
+            li
+              i.fa.fa-circle.Tbtn4(aria-hidden='true')
+            li
+              i.fa.fa-circle.Tbtn5(aria-hidden='true')
+            li
+              i.fa.fa-circle.Tbtn6(aria-hidden='true')    
+          br
+          br
+          a#ReadMore(href='destinations.html') See more Destinations Here!
+          br
+          br
+      .SpecialOffers
+        h1 Special Offers
+        .Picks
+          .itemPicks
+            #BlueTrain.item
+              .onHover
+              h1 Blue Train
+              p
+                | Luxury assumes a new dimension on The Blue Train which you will feel from the moment you step on board this newly re-furbished train, which is synonymous with luxury and hospitality.
+              img(src='Images/BlueTrain.jpg')
+            #FrenchCoastalBreak.item
+              .onHover
+              h1 French Coastal Break
+              p
+                | The southwestern seaside town of Biarritz provides a more laid back character than those on the Cote D’Azur, yet it still exudes charm and style.
+              img(src='Images/Biarritz.jpg')
+              .onHover
+            #Dubrovnik.item
+              .onHover
+              h1 Dubrovnik Summer Break
+              p
+                | Located on the Adriatic coast, Dubrovnik is a popular Mediterranean destination; a beautiful, sea port city with an illustrious past...
+              img(src='Images/DubrovnikSummer.jpg')
+            #LFrench.item
+              .onHover
+              h1 LFrench Riviera Break
+              p
+                | Nice delights the visitor with its flower market, stunning coastline, beachfront bars and fabulous shopping. It is the unofficial capital of the Cote d’Azure, or as it is widely known, the French Riviera.
+              img(src='Images/Nice.jpg')
+            #LuxuryPortoCity.item
+              .onHover
+              h1 Luxury Porto City Break
+              p
+                | Very much a waterside city, colourful Porto rises steeply from the River Douro which lies at its heart.
+              img(src='Images/LuxuryPorto.jpg')
+            #FranceNearParis.item
+              .onHover
+              h1 France Near Paris May
+              p
+                | Once discovered, never forgotten, the hidden charms of the Aisne Valley, with its gently flowing rivers and sleepy towns, is all the more enchanting because less than 90 minutes away lies the thrills of Disneyland Paris and the big-city sights of Paris itself!
+              img(src='Images/FranceNearParis.jpg')
+          br
+          br
+        .NavSpecialOffers
+          ul
+            li
+              i.fa.fa-circle.Sbtn1.activebtn(aria-hidden='true')
+            li
+              i.fa.fa-circle.Sbtn2(aria-hidden='true')
+            li
+              i.fa.fa-circle.Sbtn3(aria-hidden='true')    
+            li
+              i.fa.fa-circle.Sbtn4(aria-hidden='true')
+            li
+              i.fa.fa-circle.Sbtn5(aria-hidden='true')
+            li
+              i.fa.fa-circle.Sbtn6(aria-hidden='true')  
+          br
+          br
+          a#ReadMore(href='#') See more Special Offers Here!
+          br
+          br
+      .CommentSection
+        h1 Top Comments
+        .topComments
+          .Comment
+            img(src='Images/Customers/l3wwN-l-.jpeg')
+            h2 Christopher Hall
+            h4 Stayed in:
+            p.place Gran Hotel Sol Y Mar, Calpe, Benidorm
+            p
+              | Great hotel, stayed there three times now.Facilities excellent, staff very helpful. only negative was the wifi was patchy with so many people using it.
+            .ratings
+              i.fa.fa-thumbs-up.fa-2x(aria-hidden='true')
+              p.rate 21
+              i.fa.fa-thumbs-down.fa-2x(aria-hidden='true')
+              p.rate 1
+              i.fa.fa-share.fa-2x(aria-hidden='true')
+              p.rate 4
+          .Comment
+            img(src='Images/Customers/741a0a2593ea55bbd6238f8705c7074f.jpeg')
+            h2 James Anderson                   
+            h4 Stayed in:
+            p.place DoubleTree By Hilton London Excel, London
+            p
+              | My review would have got a very good our great if it not were for the poor welcome by the two reception staff on duty on Thursday 9th @ 12pm.
+            .ratings
+              i.fa.fa-thumbs-up.fa-2x(aria-hidden='true')
+              p.rate 14
+              i.fa.fa-thumbs-down.fa-2x(aria-hidden='true')
+              p.rate 2
+              i.fa.fa-share.fa-2x(aria-hidden='true')
+              p.rate 2
+          .Comment
+            img(src='Images/Customers/2AG8omMO.jpg')
+            h2 Jessica Stubblebines
+            h4 Stayed in:
+            p.place Db San Antonio Hotel & Spa, Qawra, It-turisti
+            p
+              | Spotlessly clean, the staff can't do enough for you. Food and entertainment fantastic and centrally located and easy access to buses that take you to Valetta,the capital,and all over the island.
+            .ratings
+              i.fa.fa-thumbs-up.fa-2x(aria-hidden='true')
+              p.rate 7
+              i.fa.fa-thumbs-down.fa-2x(aria-hidden='true')
+              p.rate 0
+              i.fa.fa-share.fa-2x(aria-hidden='true')
+              p.rate 1
+      .CommentSectionMobile
+        h1 Top Comments
+        .topComments
+          .Comment
+            img(src='Images/Customers/l3wwN-l-.jpeg')
+            h2 Christopher Hall
+            h4 Stayed in:
+            p.place Gran Hotel Sol Y Mar, Calpe, Benidorm
+            p
+              | Great hotel, stayed there three times now.Facilities excellent, staff very helpful. only negative was the wifi was patchy with so many people using it.
+            .ratings
+              i.fa.fa-thumbs-up.fa-2x(aria-hidden='true')
+              p.rate 21
+              i.fa.fa-thumbs-down.fa-2x(aria-hidden='true')
+              p.rate 1
+              i.fa.fa-share.fa-2x(aria-hidden='true')
+              p.rate 4
+          .Comment
+            img(src='Images/Customers/741a0a2593ea55bbd6238f8705c7074f.jpeg')
+            h2 James Anderson                   
+            h4 Stayed in:
+            p.place DoubleTree By Hilton London Excel, London
+            p
+              | My review would have got a very good our great if it not were for the poor welcome by the two reception staff on duty on Thursday 9th @ 12pm.
+            .ratings
+              i.fa.fa-thumbs-up.fa-2x(aria-hidden='true')
+              p.rate 14
+              i.fa.fa-thumbs-down.fa-2x(aria-hidden='true')
+              p.rate 2
+              i.fa.fa-share.fa-2x(aria-hidden='true')
+              p.rate 2
+          .Comment
+            img(src='Images/Customers/2AG8omMO.jpg')
+            h2 Jessica Stubblebines
+            h4 Stayed in:
+            p.place Db San Antonio Hotel & Spa, Qawra, It-turisti
+            p
+              | Spotlessly clean, the staff can't do enough for you. Food and entertainment fantastic and centrally located and easy access to buses that take you to Valetta,the capital,and all over the island.
+            .ratings
+              i.fa.fa-thumbs-up.fa-2x(aria-hidden='true')
+              p.rate 7
+              i.fa.fa-thumbs-down.fa-2x(aria-hidden='true')
+              p.rate 0
+              i.fa.fa-share.fa-2x(aria-hidden='true')
+              p.rate 1
+        .NavComments
+          ul
+            li
+              i.fa.fa-circle.Cbtn1.activebtn(aria-hidden='true')
+            li
+              i.fa.fa-circle.Cbtn2(aria-hidden='true')
+            li
+              i.fa.fa-circle.Cbtn3(aria-hidden='true')
+      footer
+        p.Disclaimer.container
+          strong
+            em Disclaimer:
+          |  The text and images are not mine. This website is solely for showing of my coding skills and not my advertising skills for holidays. The text and images are sourced from other websites who own the copyright to them.
+        p
+          | Et dolore et sit ut vero. Elitr ad tempor diam dolor assum et sit. Luptatum diam dolor. Rebum sea accumsan eos gubergren eos consequat dolore labore. Takimata aliquyam at sit et autem. Tempor elitr labore sit eirmod rebum vero. Ipsum eu sea facilisis. Ipsum vel eos vero amet voluptua. Et amet at. At sadipscing dolore duo volutpat at et elitr diam ut ullamcorper. Minim iriure aliquyam rebum lorem tempor vel. Aliquyam luptatum at. Facilisis et te nobis autem nonumy et volutpat voluptua dolore aliquip. Vero lorem elitr eos dolor. Dolore sadipscing consectetuer congue tation diam sadipscing et. Nonummy duo voluptua diam et. Clita nulla dolor est amet eirmod blandit consetetur vero. Est aliquam nulla ipsum lorem suscipit esse vel consetetur vulputate. Assum diam ipsum clita nostrud in justo. Gubergren lobortis no est no rebum invidunt. Sit aliquyam invidunt diam consequat takimata. Accusam sanctus. Amet voluptua qui velit erat lorem takimata.
+        script(src='Jquery3.1.1/jquery-3.1.1.min.js', rel='script')
+        script(src='js.js', rel='script')

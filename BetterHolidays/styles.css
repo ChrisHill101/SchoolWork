@@ -572,6 +572,18 @@ a {
       .SpecialOffers .Picks .itemPicks #CostaBlanca,
       .allDests .Picks .itemPicks #CostaBlanca {
         background-image: url("Images/CostaBlanca.jpg"); }
+      .topPicks .Picks .itemPicks #ChalethotelRosanna,
+      .SpecialOffers .Picks .itemPicks #ChalethotelRosanna,
+      .allDests .Picks .itemPicks #ChalethotelRosanna {
+        background-image: url("Images/Chalerhotel.jpg"); }
+      .topPicks .Picks .itemPicks #Cervinia,
+      .SpecialOffers .Picks .itemPicks #Cervinia,
+      .allDests .Picks .itemPicks #Cervinia {
+        background-image: url("Images/cervinia-2014-642x336.jpg"); }
+      .topPicks .Picks .itemPicks #WhistlerBlackcomb,
+      .SpecialOffers .Picks .itemPicks #WhistlerBlackcomb,
+      .allDests .Picks .itemPicks #WhistlerBlackcomb {
+        background-image: url("Images/WhistlerBlackcomb.jpg"); }
       .topPicks .Picks .itemPicks .item,
       .SpecialOffers .Picks .itemPicks .item,
       .allDests .Picks .itemPicks .item {
@@ -579,7 +591,7 @@ a {
         background-size: cover;
         min-width: 320px;
         width: 30%;
-        height: 218px;
+        height: 300px;
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -661,53 +673,33 @@ a {
 @media (max-width: 1600px) {
   .topPicks,
   .SpecialOffers {
-    text-align: center;
-    font-size: .85em; }
+    text-align: center; }
     .topPicks .Picks,
     .SpecialOffers .Picks {
       width: 70%; }
       .topPicks .Picks .itemPicks .item p,
       .SpecialOffers .Picks .itemPicks .item p {
-        padding: 45px 10px 0 10px; }
-      .topPicks .Picks .itemPicks #LuxuryPortoCity,
-      .SpecialOffers .Picks .itemPicks #LuxuryPortoCity {
-        font-size: .85em; } }
+        padding: 45px 10px 0 10px; } }
 
 @media (max-width: 1388px) {
-  .topPicks,
-  .SpecialOffer,
-  .allDests {
-    font-size: .8em; }
-    .topPicks .Picks,
-    .SpecialOffer .Picks,
-    .allDests .Picks {
-      width: 90%; }
-      .topPicks .Picks .itemPicks,
-      .SpecialOffer .Picks .itemPicks,
-      .allDests .Picks .itemPicks {
-        top: 0; }
-        .topPicks .Picks .itemPicks .item p,
-        .SpecialOffer .Picks .itemPicks .item p,
-        .allDests .Picks .itemPicks .item p {
-          padding: 45px 10px 0 10px; }
-        .topPicks .Picks .itemPicks #LuxuryPortoCity,
-        .SpecialOffer .Picks .itemPicks #LuxuryPortoCity,
-        .allDests .Picks .itemPicks #LuxuryPortoCity {
-          font-size: 1em; } }
+  .topPicks .Picks,
+  .SpecialOffer .Picks,
+  .allDests .Picks {
+    width: 90%; }
+    .topPicks .Picks .itemPicks,
+    .SpecialOffer .Picks .itemPicks,
+    .allDests .Picks .itemPicks {
+      top: 0; }
+      .topPicks .Picks .itemPicks .item p,
+      .SpecialOffer .Picks .itemPicks .item p,
+      .allDests .Picks .itemPicks .item p {
+        padding: 45px 10px 0 10px; } }
 
 @media (max-width: 1084px) {
-  .topPicks,
-  .SpecialOffers,
-  .allDests {
-    font-size: .8em; }
-    .topPicks .Picks .itemPicks .item p,
-    .SpecialOffers .Picks .itemPicks .item p,
-    .allDests .Picks .itemPicks .item p {
-      padding: 45px 10px 0 10px; }
-    .topPicks .Picks .itemPicks #LuxuryPortoCity,
-    .SpecialOffers .Picks .itemPicks #LuxuryPortoCity,
-    .allDests .Picks .itemPicks #LuxuryPortoCity {
-      font-size: 1em; } }
+  .topPicks .Picks .itemPicks .item p,
+  .SpecialOffers .Picks .itemPicks .item p,
+  .allDests .Picks .itemPicks .item p {
+    padding: 45px 10px 0 10px; } }
 
 @media (max-width: 776px) {
   .topPicks,
@@ -737,6 +729,17 @@ a {
           position: relative;
           overflow: hidden;
           z-index: 1; }
+          .topPicks .Picks .itemPicks .item .onHover,
+          .SpecialOffers .Picks .itemPicks .item .onHover,
+          .allDests .Picks .itemPicks .item .onHover {
+            opacity: .3; }
+          .topPicks .Picks .itemPicks .item p,
+          .topPicks .Picks .itemPicks .item h1,
+          .SpecialOffers .Picks .itemPicks .item p,
+          .SpecialOffers .Picks .itemPicks .item h1,
+          .allDests .Picks .itemPicks .item p,
+          .allDests .Picks .itemPicks .item h1 {
+            opacity: 1; }
   .NavSpecialOffers,
   .NavTopPicks {
     display: block; } }
@@ -879,6 +882,42 @@ a {
         transition: all 0.15s; }
         .CommentSectionMobile .topComments .Comment i:hover {
           color: #00aaff; }
+
+.Page h1.title {
+  margin: 0;
+  Padding-top: 80px;
+  font-size: 60px; }
+
+.Page .pageContent {
+  padding-top: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .Page .pageContent img {
+    padding-left: 15px;
+    width: 40%;
+    height: 50%;
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: 0; }
+  .Page .pageContent .Text {
+    padding: 20px;
+    width: calc(60% - 55px);
+    font-size: 20px; }
+    .Page .pageContent .Text p.Desc {
+      padding-top: 60px;
+      float: left;
+      width: 65%; }
+    .Page .pageContent .Text .Info {
+      padding-top: 0%;
+      margin-top: -30px;
+      float: right;
+      width: 35%; }
+      .Page .pageContent .Text .Info li {
+        margin-left: 50px; }
 
 .NavComments,
 .NavTopPicks,

@@ -130,6 +130,81 @@ $(function() {
                 Section + $(btnPressed).addClass("activebtn")
             });
         }
+        var $Allbtn = $(".DestNav #All");
+        var $Summerbtn = $(".DestNav #Summer");
+        var $Winterbtn = $(".DestNav #Winter");
+        var $Citybtn = $(".DestNav #City");
 
+        var $All = $(".allDests .item");
+        var $Summer = $(".allDests .Summer");
+        var $Winter = $(".allDests .Winter");
+        var $City = $(".allDests .City");
+
+        $($Allbtn).on("click", function() {
+            $(this).addClass("active")
+            $Summerbtn.removeClass("active")
+            $Winterbtn.removeClass("active")
+            $($All).css({
+                display: "block"
+            });
+        });
+
+        $($Summerbtn).on("click", function() {
+            $(this).addClass("active")
+            $Allbtn.removeClass("active")
+            $Winterbtn.removeClass("active")
+            $($Winter).css({
+                display: "none"
+            });
+            $($City).css({
+                display: "none"
+            });
+            $($Summer).css({
+                display: "block"
+            });
+        });
+
+        $($Winterbtn).on("click", function() {
+            $(this).addClass("active")
+            $Allbtn.removeClass("active")
+            $Summerbtn.removeClass("active")
+            $Citybtn.removeClass("active")
+            $($Summer).css({
+                display: "none"
+            });
+            $($City).css({
+                display: "none"
+            });
+            $($Winter).css({
+                display: "block"
+            });
+        });
+
+        $($Citybtn).on("click", function() {
+            $(this).addClass("active")
+            $Allbtn.removeClass("active")
+            $Summerbtn.removeClass("active")
+            $Winterbtn.removeClass("active")
+            $($Winter).css({
+                display: "none"
+            });
+            $($Summer).css({
+                display: "none"
+            });
+            $($City).css({
+                display: "block"
+            });
+        });
+
+        /* $($Citybtn).on("click", function() {
+             $($Winter).animate({
+                 opacity: 0,
+                 left: "-50px",
+             }, 300, function() {
+                 $($Winter).css({
+                     display: "none",
+                 });
+             });
+         }); */
     });
 });

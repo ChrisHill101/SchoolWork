@@ -321,7 +321,6 @@ a
                 background-color: white
         .active
             background-color: white
-
 .allDests
     .Picks
         padding-top: 30px
@@ -418,12 +417,18 @@ a
                 background-image: url("Images/Fuertventura.jpg")
             #CostaBlanca
                 background-image: url("Images/CostaBlanca.jpg")
+            #ChalethotelRosanna
+                background-image: url("Images/Chalerhotel.jpg")
+            #Cervinia
+                background-image: url("Images/cervinia-2014-642x336.jpg")
+            #WhistlerBlackcomb
+                background-image: url("Images/WhistlerBlackcomb.jpg")
             .item
                 background-origin: 0 0
                 background-size: cover
                 min-width: 320px
                 width: 30%
-                height: 218px
+                height: 300px
                 position: relative
                 overflow: hidden
                 z-index: 1
@@ -477,41 +482,32 @@ a
     .topPicks,
     .SpecialOffers
         text-align: center
-        font-size: .85em
         .Picks
             width: 70%
             .itemPicks
                 .item
                     p
                         padding: 45px 10px 0 10px
-                #LuxuryPortoCity
-                    font-size: .85em
 @media (max-width: 1388px)
     .topPicks,
     .SpecialOffer,
     .allDests
-        font-size: .8em
         .Picks
             width: 90%
             .itemPicks
                 .item
                     p
                         padding: 45px 10px 0 10px
-                #LuxuryPortoCity
-                    font-size: 1em
                 top: 0
 @media (max-width: 1084px)
     .topPicks,
     .SpecialOffers,
     .allDests
-        font-size: .8em
         .Picks
             .itemPicks
                 .item
                     p
                         padding: 45px 10px 0 10px
-                #LuxuryPortoCity
-                    font-size: 1em
 @media (max-width: 776px)
     .topPicks,
     .SpecialOffers,
@@ -528,6 +524,11 @@ a
                     position: relative
                     overflow: hidden
                     z-index: 1
+                    .onHover
+                        opacity: .3
+                    p,
+                    h1
+                        opacity: 1
     .NavSpecialOffers,
     .NavTopPicks
         display: block
@@ -653,6 +654,35 @@ a
                 +transition(all .15s)
                 &:hover
                     color: #00aaff
+.Page
+    h1.title
+        margin: 0
+        Padding-top: 80px
+        font-size: 60px
+    .pageContent
+        padding-top: 60px
+        display: flex
+        flex-wrap: wrap
+        img
+            padding-left: 15px
+            width: 40%
+            height: 50%
+            flex: 0
+        .Text
+            padding: 20px
+            width: calc(60% - 55px)
+            font-size: 20px
+            p.Desc
+                padding-top: 60px
+                float: left
+                width: 65%
+            .Info 
+                padding-top: 0%
+                margin-top: -30px
+                float: right
+                width: 35%
+                li 
+                    margin-left: 50px
 .NavComments,
 .NavTopPicks,
 .NavSpecialOffers
