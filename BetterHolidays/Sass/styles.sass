@@ -326,7 +326,8 @@ a
         padding-top: 30px
 .topPicks,
 .SpecialOffers,
-.allDests
+.allDests,
+.Accomodation
     text-align: center
     .Picks
         width: 70%
@@ -356,6 +357,8 @@ a
                     z-index: 3
                 h2
                     top: 40px
+                h2.Location
+                    top: auto
                 p.Accom
                     top: 15px
                 p
@@ -682,11 +685,6 @@ a
         padding-top: 60px
         display: flex
         flex-wrap: wrap
-        img
-            padding-left: 15px
-            width: 40%
-            height: 50%
-            flex: 0
         .Text
             padding: 20px
             width: calc(60% - 55px)
@@ -702,9 +700,40 @@ a
                 width: 35%
                 li 
                     margin-left: 50px
+        .slider
+            margin: 15px
+            width: calc(40% - 30px) 
+            overflow: hidden
+            height: 40%
+            .sliderContent
+                width: 300%
+                margin-left: -100%
+                justify-content: flex-start
+                display: flex
+                flex-wrap: nowrap
+                .img
+                    width: 100%
+                    position: relative
+                    overflow: hidden
+                    z-index: 1
+            img
+                width: 100%
+                height: 100%
+                flex: 0
+.Accomodation
+    .Picks
+        .itemPicks
+            h2.Location
+                position: absolute
+                bottom: 0px
+    img 
+        height: 219px
+        width: auto
+            
 .NavComments,
 .NavTopPicks,
-.NavSpecialOffers
+.NavSpecialOffers,
+.NavPage
     text-align: center
     ul 
         list-style: none

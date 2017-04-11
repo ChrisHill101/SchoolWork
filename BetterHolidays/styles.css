@@ -404,17 +404,20 @@ a {
 
 .topPicks,
 .SpecialOffers,
-.allDests {
+.allDests,
+.Accomodation {
   text-align: center;
   text-align: center; }
   .topPicks .Picks,
   .SpecialOffers .Picks,
-  .allDests .Picks {
+  .allDests .Picks,
+  .Accomodation .Picks {
     width: 70%;
     margin: auto; }
     .topPicks .Picks .itemPicks,
     .SpecialOffers .Picks .itemPicks,
-    .allDests .Picks .itemPicks {
+    .allDests .Picks .itemPicks,
+    .Accomodation .Picks .itemPicks {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -426,7 +429,8 @@ a {
       flex-wrap: wrap; }
       .topPicks .Picks .itemPicks .item,
       .SpecialOffers .Picks .itemPicks .item,
-      .allDests .Picks .itemPicks .item {
+      .allDests .Picks .itemPicks .item,
+      .Accomodation .Picks .itemPicks .item {
         min-width: 320px;
         width: 30%;
         position: relative;
@@ -434,7 +438,8 @@ a {
         z-index: 1; }
         .topPicks .Picks .itemPicks .item img,
         .SpecialOffers .Picks .itemPicks .item img,
-        .allDests .Picks .itemPicks .item img {
+        .allDests .Picks .itemPicks .item img,
+        .Accomodation .Picks .itemPicks .item img {
           -webkit-transition: all 10s ease;
           -moz-transition: all 10s ease;
           transition: all 10s ease; }
@@ -446,7 +451,10 @@ a {
         .SpecialOffers .Picks .itemPicks .item p,
         .allDests .Picks .itemPicks .item h2,
         .allDests .Picks .itemPicks .item h1,
-        .allDests .Picks .itemPicks .item p {
+        .allDests .Picks .itemPicks .item p,
+        .Accomodation .Picks .itemPicks .item h2,
+        .Accomodation .Picks .itemPicks .item h1,
+        .Accomodation .Picks .itemPicks .item p {
           z-index: 3;
           padding-left: 34px;
           color: white;
@@ -459,20 +467,29 @@ a {
           z-index: 3; }
         .topPicks .Picks .itemPicks .item h2,
         .SpecialOffers .Picks .itemPicks .item h2,
-        .allDests .Picks .itemPicks .item h2 {
+        .allDests .Picks .itemPicks .item h2,
+        .Accomodation .Picks .itemPicks .item h2 {
           top: 40px; }
+        .topPicks .Picks .itemPicks .item h2.Location,
+        .SpecialOffers .Picks .itemPicks .item h2.Location,
+        .allDests .Picks .itemPicks .item h2.Location,
+        .Accomodation .Picks .itemPicks .item h2.Location {
+          top: auto; }
         .topPicks .Picks .itemPicks .item p.Accom,
         .SpecialOffers .Picks .itemPicks .item p.Accom,
-        .allDests .Picks .itemPicks .item p.Accom {
+        .allDests .Picks .itemPicks .item p.Accom,
+        .Accomodation .Picks .itemPicks .item p.Accom {
           top: 15px; }
         .topPicks .Picks .itemPicks .item p,
         .SpecialOffers .Picks .itemPicks .item p,
-        .allDests .Picks .itemPicks .item p {
+        .allDests .Picks .itemPicks .item p,
+        .Accomodation .Picks .itemPicks .item p {
           padding: 65px 10px 0 10px;
           text-align: center; }
         .topPicks .Picks .itemPicks .item .onHover,
         .SpecialOffers .Picks .itemPicks .item .onHover,
-        .allDests .Picks .itemPicks .item .onHover {
+        .allDests .Picks .itemPicks .item .onHover,
+        .Accomodation .Picks .itemPicks .item .onHover {
           z-index: 2;
           cursor: pointer;
           position: absolute;
@@ -483,29 +500,35 @@ a {
           transition: all .4s; }
           .topPicks .Picks .itemPicks .item .onHover:hover,
           .SpecialOffers .Picks .itemPicks .item .onHover:hover,
-          .allDests .Picks .itemPicks .item .onHover:hover {
+          .allDests .Picks .itemPicks .item .onHover:hover,
+          .Accomodation .Picks .itemPicks .item .onHover:hover {
             opacity: .55; }
           .topPicks .Picks .itemPicks .item .onHover:hover ~ img,
           .SpecialOffers .Picks .itemPicks .item .onHover:hover ~ img,
-          .allDests .Picks .itemPicks .item .onHover:hover ~ img {
+          .allDests .Picks .itemPicks .item .onHover:hover ~ img,
+          .Accomodation .Picks .itemPicks .item .onHover:hover ~ img {
             -webkit-transform: scale(1.6);
             -ms-transform: scale(1.6);
             transform: scale(1.6); }
           .topPicks .Picks .itemPicks .item .onHover:hover ~ h1,
           .SpecialOffers .Picks .itemPicks .item .onHover:hover ~ h1,
-          .allDests .Picks .itemPicks .item .onHover:hover ~ h1 {
+          .allDests .Picks .itemPicks .item .onHover:hover ~ h1,
+          .Accomodation .Picks .itemPicks .item .onHover:hover ~ h1 {
             opacity: 1; }
           .topPicks .Picks .itemPicks .item .onHover:hover ~ h2,
           .SpecialOffers .Picks .itemPicks .item .onHover:hover ~ h2,
-          .allDests .Picks .itemPicks .item .onHover:hover ~ h2 {
+          .allDests .Picks .itemPicks .item .onHover:hover ~ h2,
+          .Accomodation .Picks .itemPicks .item .onHover:hover ~ h2 {
             opacity: 1; }
           .topPicks .Picks .itemPicks .item .onHover:hover ~ p,
           .SpecialOffers .Picks .itemPicks .item .onHover:hover ~ p,
-          .allDests .Picks .itemPicks .item .onHover:hover ~ p {
+          .allDests .Picks .itemPicks .item .onHover:hover ~ p,
+          .Accomodation .Picks .itemPicks .item .onHover:hover ~ p {
             opacity: 1; }
   .topPicks a#ReadMore,
   .SpecialOffers a#ReadMore,
-  .allDests a#ReadMore {
+  .allDests a#ReadMore,
+  .Accomodation a#ReadMore {
     border-radius: 7px;
     padding: 10px 15px;
     background-color: #333;
@@ -516,12 +539,14 @@ a {
     transition: all 0.3s; }
     .topPicks a#ReadMore:hover,
     .SpecialOffers a#ReadMore:hover,
-    .allDests a#ReadMore:hover {
+    .allDests a#ReadMore:hover,
+    .Accomodation a#ReadMore:hover {
       box-shadow: 5px 5px 9px black;
       background-color: #222; }
   .topPicks img,
   .SpecialOffers img,
-  .allDests img {
+  .allDests img,
+  .Accomodation img {
     max-width: 100%;
     margin-bottom: -7px;
     -webkit-transition: all 10s ease;
@@ -529,12 +554,14 @@ a {
     transition: all 10s ease; }
   .topPicks .Picks,
   .SpecialOffers .Picks,
-  .allDests .Picks {
+  .allDests .Picks,
+  .Accomodation .Picks {
     width: 70%;
     margin: auto; }
     .topPicks .Picks .itemPicks,
     .SpecialOffers .Picks .itemPicks,
-    .allDests .Picks .itemPicks {
+    .allDests .Picks .itemPicks,
+    .Accomodation .Picks .itemPicks {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -546,87 +573,108 @@ a {
       flex-wrap: wrap; }
       .topPicks .Picks .itemPicks #Tenerife,
       .SpecialOffers .Picks .itemPicks #Tenerife,
-      .allDests .Picks .itemPicks #Tenerife {
+      .allDests .Picks .itemPicks #Tenerife,
+      .Accomodation .Picks .itemPicks #Tenerife {
         background-image: url("Images/Tenerife.jpg"); }
         .topPicks .Picks .itemPicks #Tenerife img,
         .SpecialOffers .Picks .itemPicks #Tenerife img,
-        .allDests .Picks .itemPicks #Tenerife img {
+        .allDests .Picks .itemPicks #Tenerife img,
+        .Accomodation .Picks .itemPicks #Tenerife img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #Benidorm,
       .SpecialOffers .Picks .itemPicks #Benidorm,
-      .allDests .Picks .itemPicks #Benidorm {
+      .allDests .Picks .itemPicks #Benidorm,
+      .Accomodation .Picks .itemPicks #Benidorm {
         background-image: url("Images/Benidorm.jpg"); }
         .topPicks .Picks .itemPicks #Benidorm img,
         .SpecialOffers .Picks .itemPicks #Benidorm img,
-        .allDests .Picks .itemPicks #Benidorm img {
+        .allDests .Picks .itemPicks #Benidorm img,
+        .Accomodation .Picks .itemPicks #Benidorm img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #Tenerife,
       .SpecialOffers .Picks .itemPicks #Tenerife,
-      .allDests .Picks .itemPicks #Tenerife {
+      .allDests .Picks .itemPicks #Tenerife,
+      .Accomodation .Picks .itemPicks #Tenerife {
         background-image: url("Images/Tenerife.jpg"); }
         .topPicks .Picks .itemPicks #Tenerife img,
         .SpecialOffers .Picks .itemPicks #Tenerife img,
-        .allDests .Picks .itemPicks #Tenerife img {
+        .allDests .Picks .itemPicks #Tenerife img,
+        .Accomodation .Picks .itemPicks #Tenerife img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #Manjorca,
       .SpecialOffers .Picks .itemPicks #Manjorca,
-      .allDests .Picks .itemPicks #Manjorca {
+      .allDests .Picks .itemPicks #Manjorca,
+      .Accomodation .Picks .itemPicks #Manjorca {
         background-image: url("Images/Manjorca.jpg"); }
         .topPicks .Picks .itemPicks #Manjorca img,
         .SpecialOffers .Picks .itemPicks #Manjorca img,
-        .allDests .Picks .itemPicks #Manjorca img {
+        .allDests .Picks .itemPicks #Manjorca img,
+        .Accomodation .Picks .itemPicks #Manjorca img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #Algarva,
       .SpecialOffers .Picks .itemPicks #Algarva,
-      .allDests .Picks .itemPicks #Algarva {
+      .allDests .Picks .itemPicks #Algarva,
+      .Accomodation .Picks .itemPicks #Algarva {
         background-image: url("Images/Algarva.jpg"); }
         .topPicks .Picks .itemPicks #Algarva img,
         .SpecialOffers .Picks .itemPicks #Algarva img,
-        .allDests .Picks .itemPicks #Algarva img {
+        .allDests .Picks .itemPicks #Algarva img,
+        .Accomodation .Picks .itemPicks #Algarva img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #Fuertventura,
       .SpecialOffers .Picks .itemPicks #Fuertventura,
-      .allDests .Picks .itemPicks #Fuertventura {
+      .allDests .Picks .itemPicks #Fuertventura,
+      .Accomodation .Picks .itemPicks #Fuertventura {
         background-image: url("Images/Fuertventura.jpg"); }
         .topPicks .Picks .itemPicks #Fuertventura img,
         .SpecialOffers .Picks .itemPicks #Fuertventura img,
-        .allDests .Picks .itemPicks #Fuertventura img {
+        .allDests .Picks .itemPicks #Fuertventura img,
+        .Accomodation .Picks .itemPicks #Fuertventura img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #CostaBlanca,
       .SpecialOffers .Picks .itemPicks #CostaBlanca,
-      .allDests .Picks .itemPicks #CostaBlanca {
+      .allDests .Picks .itemPicks #CostaBlanca,
+      .Accomodation .Picks .itemPicks #CostaBlanca {
         background-image: url("Images/CostaBlanca.jpg"); }
         .topPicks .Picks .itemPicks #CostaBlanca img,
         .SpecialOffers .Picks .itemPicks #CostaBlanca img,
-        .allDests .Picks .itemPicks #CostaBlanca img {
+        .allDests .Picks .itemPicks #CostaBlanca img,
+        .Accomodation .Picks .itemPicks #CostaBlanca img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #ChalethotelRosanna,
       .SpecialOffers .Picks .itemPicks #ChalethotelRosanna,
-      .allDests .Picks .itemPicks #ChalethotelRosanna {
+      .allDests .Picks .itemPicks #ChalethotelRosanna,
+      .Accomodation .Picks .itemPicks #ChalethotelRosanna {
         background-image: url("Images/Chalerhotel.jpg"); }
         .topPicks .Picks .itemPicks #ChalethotelRosanna img,
         .SpecialOffers .Picks .itemPicks #ChalethotelRosanna img,
-        .allDests .Picks .itemPicks #ChalethotelRosanna img {
+        .allDests .Picks .itemPicks #ChalethotelRosanna img,
+        .Accomodation .Picks .itemPicks #ChalethotelRosanna img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #Cervinia,
       .SpecialOffers .Picks .itemPicks #Cervinia,
-      .allDests .Picks .itemPicks #Cervinia {
+      .allDests .Picks .itemPicks #Cervinia,
+      .Accomodation .Picks .itemPicks #Cervinia {
         background-image: url("Images/cervinia-2014-642x336.jpg"); }
         .topPicks .Picks .itemPicks #Cervinia img,
         .SpecialOffers .Picks .itemPicks #Cervinia img,
-        .allDests .Picks .itemPicks #Cervinia img {
+        .allDests .Picks .itemPicks #Cervinia img,
+        .Accomodation .Picks .itemPicks #Cervinia img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #WhistlerBlackcomb,
       .SpecialOffers .Picks .itemPicks #WhistlerBlackcomb,
-      .allDests .Picks .itemPicks #WhistlerBlackcomb {
+      .allDests .Picks .itemPicks #WhistlerBlackcomb,
+      .Accomodation .Picks .itemPicks #WhistlerBlackcomb {
         background-image: url("Images/WhistlerBlackcomb.jpg"); }
         .topPicks .Picks .itemPicks #WhistlerBlackcomb img,
         .SpecialOffers .Picks .itemPicks #WhistlerBlackcomb img,
-        .allDests .Picks .itemPicks #WhistlerBlackcomb img {
+        .allDests .Picks .itemPicks #WhistlerBlackcomb img,
+        .Accomodation .Picks .itemPicks #WhistlerBlackcomb img {
           opacity: 0; }
       .topPicks .Picks .itemPicks .item,
       .SpecialOffers .Picks .itemPicks .item,
-      .allDests .Picks .itemPicks .item {
+      .allDests .Picks .itemPicks .item,
+      .Accomodation .Picks .itemPicks .item {
         background-origin: 0 0;
         background-size: cover;
         min-width: 320px;
@@ -639,14 +687,17 @@ a {
         transition: all 15s; }
         .topPicks .Picks .itemPicks .item:hover,
         .SpecialOffers .Picks .itemPicks .item:hover,
-        .allDests .Picks .itemPicks .item:hover {
+        .allDests .Picks .itemPicks .item:hover,
+        .Accomodation .Picks .itemPicks .item:hover {
           background-position: calc(100% - 30%); }
         .topPicks .Picks .itemPicks .item h1,
         .topPicks .Picks .itemPicks .item p,
         .SpecialOffers .Picks .itemPicks .item h1,
         .SpecialOffers .Picks .itemPicks .item p,
         .allDests .Picks .itemPicks .item h1,
-        .allDests .Picks .itemPicks .item p {
+        .allDests .Picks .itemPicks .item p,
+        .Accomodation .Picks .itemPicks .item h1,
+        .Accomodation .Picks .itemPicks .item p {
           z-index: 3;
           padding-left: 34px;
           color: black;
@@ -659,7 +710,8 @@ a {
           z-index: 3; }
         .topPicks .Picks .itemPicks .item .onHover,
         .SpecialOffers .Picks .itemPicks .item .onHover,
-        .allDests .Picks .itemPicks .item .onHover {
+        .allDests .Picks .itemPicks .item .onHover,
+        .Accomodation .Picks .itemPicks .item .onHover {
           z-index: 2;
           cursor: pointer;
           position: absolute;
@@ -670,19 +722,23 @@ a {
           transition: all .4s; }
           .topPicks .Picks .itemPicks .item .onHover:hover,
           .SpecialOffers .Picks .itemPicks .item .onHover:hover,
-          .allDests .Picks .itemPicks .item .onHover:hover {
+          .allDests .Picks .itemPicks .item .onHover:hover,
+          .Accomodation .Picks .itemPicks .item .onHover:hover {
             opacity: .3; }
           .topPicks .Picks .itemPicks .item .onHover:hover ~ h1,
           .SpecialOffers .Picks .itemPicks .item .onHover:hover ~ h1,
-          .allDests .Picks .itemPicks .item .onHover:hover ~ h1 {
+          .allDests .Picks .itemPicks .item .onHover:hover ~ h1,
+          .Accomodation .Picks .itemPicks .item .onHover:hover ~ h1 {
             opacity: 1; }
           .topPicks .Picks .itemPicks .item .onHover:hover ~ p,
           .SpecialOffers .Picks .itemPicks .item .onHover:hover ~ p,
-          .allDests .Picks .itemPicks .item .onHover:hover ~ p {
+          .allDests .Picks .itemPicks .item .onHover:hover ~ p,
+          .Accomodation .Picks .itemPicks .item .onHover:hover ~ p {
             opacity: 1; }
   .topPicks a#ReadMore,
   .SpecialOffers a#ReadMore,
-  .allDests a#ReadMore {
+  .allDests a#ReadMore,
+  .Accomodation a#ReadMore {
     border-radius: 7px;
     padding: 10px 15px;
     background-color: #333;
@@ -693,12 +749,14 @@ a {
     transition: all 0.3s; }
     .topPicks a#ReadMore:hover,
     .SpecialOffers a#ReadMore:hover,
-    .allDests a#ReadMore:hover {
+    .allDests a#ReadMore:hover,
+    .Accomodation a#ReadMore:hover {
       box-shadow: 5px 5px 9px black;
       background-color: #222; }
   .topPicks img,
   .SpecialOffers img,
-  .allDests img {
+  .allDests img,
+  .Accomodation img {
     max-width: 100%;
     margin-bottom: -7px;
     -webkit-transition: all 10s ease;
@@ -935,13 +993,6 @@ a {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  .Page .pageContent img {
-    padding-left: 15px;
-    width: 40%;
-    height: 50%;
-    -webkit-flex: 0;
-    -ms-flex: 0;
-    flex: 0; }
   .Page .pageContent .Text {
     padding: 20px;
     width: calc(60% - 55px);
@@ -957,19 +1008,58 @@ a {
       width: 35%; }
       .Page .pageContent .Text .Info li {
         margin-left: 50px; }
+  .Page .pageContent .slider {
+    margin: 15px;
+    width: calc(40% - 30px);
+    overflow: hidden;
+    height: 40%; }
+    .Page .pageContent .slider .sliderContent {
+      width: 300%;
+      margin-left: -100%;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+      .Page .pageContent .slider .sliderContent .img {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; }
+    .Page .pageContent .slider img {
+      width: 100%;
+      height: 100%;
+      -webkit-flex: 0;
+      -ms-flex: 0;
+      flex: 0; }
+
+.Accomodation .Picks .itemPicks h2.Location {
+  position: absolute;
+  bottom: 0px; }
+
+.Accomodation img {
+  height: 219px;
+  width: auto; }
 
 .NavComments,
 .NavTopPicks,
-.NavSpecialOffers {
+.NavSpecialOffers,
+.NavPage {
   text-align: center; }
   .NavComments ul,
   .NavTopPicks ul,
-  .NavSpecialOffers ul {
+  .NavSpecialOffers ul,
+  .NavPage ul {
     list-style: none;
     font-size: 1.3em; }
     .NavComments ul li,
     .NavTopPicks ul li,
-    .NavSpecialOffers ul li {
+    .NavSpecialOffers ul li,
+    .NavPage ul li {
       cursor: pointer;
       display: inline-block;
       padding: 0 10px;
@@ -978,7 +1068,8 @@ a {
       transition: all 0.15s; }
     .NavComments ul .activebtn,
     .NavTopPicks ul .activebtn,
-    .NavSpecialOffers ul .activebtn {
+    .NavSpecialOffers ul .activebtn,
+    .NavPage ul .activebtn {
       color: #00aaff; }
 
 @media (max-width: 1700px) {

@@ -1,3 +1,11 @@
+function ValidateForm(ContactForm) {
+    if (ContactForm.Fname.value == "") {
+        alert("Please Enter Your First Name");
+        return false;
+    }
+
+}
+
 $(function() {
     "Use Strict"
     $(document).ready(function() {
@@ -118,6 +126,18 @@ $(function() {
             Scroll("Sbtn", "6", 6, $SpecialOffers, $SPicks, "-500vw")
         });
 
+        var $PageSlider = $(".slider")
+        var $sliderContent = $(".slider > .sliderContent")
+        $(".btn1").on("click", function() {
+            Scroll("btn", "1", 3, $PageSlider, $sliderContent, "0")
+        });
+        $(".btn2").on("click", function() {
+            Scroll("btn", "2", 3, $PageSlider, $sliderContent, "-100%")
+        });
+        $(".btn3").on("click", function() {
+            Scroll("btn", "3", 3, $PageSlider, $sliderContent, "-200%")
+        });
+
         Scroll = function(btn, btnNum, NumInList, Section, Animate, Move) {
             var btnPressed = "." + btn + btnNum
             Animate.animate({
@@ -179,7 +199,6 @@ $(function() {
                 display: "block"
             });
         });
-
         $($Citybtn).on("click", function() {
             $(this).addClass("active")
             $Allbtn.removeClass("active")
@@ -195,16 +214,15 @@ $(function() {
                 display: "block"
             });
         });
-
-        /* $($Citybtn).on("click", function() {
-             $($Winter).animate({
-                 opacity: 0,
-                 left: "-50px",
-             }, 300, function() {
-                 $($Winter).css({
-                     display: "none",
-                 });
-             });
-         }); */
+        /*
+        $($Citybtn).on("click", function() {
+            $($Winter).animate({
+                    opacity: 0,
+                    left: "-50px",
+                }, 100,
+                function() {
+                    $($Winter).css({});
+                });
+        }); */
     });
 });
