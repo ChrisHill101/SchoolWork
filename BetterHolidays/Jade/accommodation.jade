@@ -1,7 +1,7 @@
 doctype
 html(lang="en")
     head
-        title Special Offers - Better Holidays
+        title Accomodation - Better Holidays
         link(href='styles.css' rel='stylesheet')
         link(href='Fonts/font-awesome-4.7.0/css/font-awesome.min.css' rel='stylesheet')
         link(href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet")
@@ -69,13 +69,13 @@ html(lang="en")
                   i(class="fa fa-question-circle" aria-hidden="true")
             .AccomNav
                 ul
-                    li.active
+                    li#Allbtn.active
                         p All
-                    li
+                    li#Hostelsbtn
                         p Hostels
-                    li
+                    li#BnBbtn
                         p B&B
-                    li
+                    li#Hotelbtn
                         p Hotel
                 .NavTopPicks
                     ul
@@ -93,40 +93,41 @@ html(lang="en")
                             i(class="fa fa-circle Sbtn6" aria-hidden="true")  
                     br
                     br
+                    
+            h1 Select A Hotel
             .Accomodation
-                h1 Select A Hotel
                 .Picks
                     .itemPicks
-                        div#ClubTenerife.item
+                        div#ClubTenerife.item.hotel
                             div.onHover
                             h1 Club Tenerife
                             h2.Location Tenerife
                             img(src="Images/ClubTenerife.jpg")
-                        div#VigiliaParkApartments.item
+                        div#VigiliaParkApartments.item.hotel
                             div.onHover
                             h1 Vigilia Park Apartments
                             h2.Location Tenerife
                             img(src="Images/VigiliaParkApartments.jpg")
-                        div#Flamingo.item
+                        div#Flamingo.item.hotel
                             div.onHover
                             h1 Hotel Bahia Flamingo
                             h2.Location Tenerife
                             img(src="Images/HotelBahiaFlamingo.jpg")
-                        div#ClubTenerife.item
+                        div#ClubTenerife.item.hostel
                             div.onHover
-                            h1 Club Tenerife
-                            h2.Location Tenerife
-                            img(src="Images/ClubTenerife.jpg")
-                        div#ClubTenerife.item
+                            h1 Le Village Hostel Montmartre
+                            h2.Location Paris
+                            img(src="Images/12_30.jpg")
+                        div#ClubTenerife.item.hostel
                             div.onHover
-                            h1 Club Tenerife
-                            h2.Location Tenerife
-                            img(src="Images/ClubTenerife.jpg")
-                        div#ClubTenerife.item
+                            h1 Mola Hostel
+                            h2.Location Madrid
+                            img(src="Images/22_30.JPG")
+                        div#ClubTenerife.item.BnB
                             div.onHover
-                            h1 Club Tenerife
-                            h2.Location Tenerife
-                            img(src="Images/ClubTenerife.jpg")
+                            h1 Maggy's Guesthouse
+                            h2.Location Amsterdam
+                            img(src="Images/9928884.jpg")
                     br
                     br
                 .NavSpecialOffers
@@ -144,7 +145,7 @@ html(lang="en")
                         li
                             i(class="fa fa-circle Sbtn6" aria-hidden="true")  
                 footer
-                p.Disclaimer.container <strong><em>Disclaimer:</em></strong> The text and images are not mine. This website is solely for showing of my coding skills and not my advertising skills for holidays. The text and images are sourced from other websites who own the copyright to them.
-                p Et dolore et sit ut vero. Elitr ad tempor diam dolor assum et sit. Luptatum diam dolor. Rebum sea accumsan eos gubergren eos consequat dolore labore. Takimata aliquyam at sit et autem. Tempor elitr labore sit eirmod rebum vero. Ipsum eu sea facilisis. Ipsum vel eos vero amet voluptua. Et amet at. At sadipscing dolore duo volutpat at et elitr diam ut ullamcorper. Minim iriure aliquyam rebum lorem tempor vel. Aliquyam luptatum at. Facilisis et te nobis autem nonumy et volutpat voluptua dolore aliquip. Vero lorem elitr eos dolor. Dolore sadipscing consectetuer congue tation diam sadipscing et. Nonummy duo voluptua diam et. Clita nulla dolor est amet eirmod blandit consetetur vero. Est aliquam nulla ipsum lorem suscipit esse vel consetetur vulputate. Assum diam ipsum clita nostrud in justo. Gubergren lobortis no est no rebum invidunt. Sit aliquyam invidunt diam consequat takimata. Accusam sanctus. Amet voluptua qui velit erat lorem takimata. 
-                script(src="/Jquery3.1.1/jquery-3.1.1.min.js" rel="script")
-                script(src="js.js" rel="script")
+                    p.Disclaimer.container <strong><em>Disclaimer:</em></strong> The text and images are not mine. This website is solely for showing of my coding skills and not my advertising skills for holidays. The text and images are sourced from other websites who own the copyright to them.
+                    p Et dolore et sit ut vero. Elitr ad tempor diam dolor assum et sit. Luptatum diam dolor. Rebum sea accumsan eos gubergren eos consequat dolore labore. Takimata aliquyam at sit et autem. Tempor elitr labore sit eirmod rebum vero. Ipsum eu sea facilisis. Ipsum vel eos vero amet voluptua. Et amet at. At sadipscing dolore duo volutpat at et elitr diam ut ullamcorper. Minim iriure aliquyam rebum lorem tempor vel. Aliquyam luptatum at. Facilisis et te nobis autem nonumy et volutpat voluptua dolore aliquip. Vero lorem elitr eos dolor. Dolore sadipscing consectetuer congue tation diam sadipscing et. Nonummy duo voluptua diam et. Clita nulla dolor est amet eirmod blandit consetetur vero. Est aliquam nulla ipsum lorem suscipit esse vel consetetur vulputate. Assum diam ipsum clita nostrud in justo. Gubergren lobortis no est no rebum invidunt. Sit aliquyam invidunt diam consequat takimata. Accusam sanctus. Amet voluptua qui velit erat lorem takimata. 
+                    script(src="/Jquery3.1.1/jquery-3.1.1.min.js" rel="script")
+                    script(src="js.js" rel="script")

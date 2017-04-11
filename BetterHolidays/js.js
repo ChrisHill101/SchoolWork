@@ -214,6 +214,7 @@ $(function() {
                 display: "block"
             });
         });
+
         /*
         $($Citybtn).on("click", function() {
             $($Winter).animate({
@@ -224,5 +225,62 @@ $(function() {
                     $($Winter).css({});
                 });
         }); */
+        var $Allbtn = $(".AccomNav #Allbtn");
+        var $Hostelbtn = $(".AccomNav #Hostelsbtn");
+        var $BnBbtn = $(".AccomNav #BnBbtn");
+        var $Hotelbtn = $(".AccomNav #Hotelbtn");
+
+        var $All = $(".Accomodation .item");
+        var $Hostel = $(".Accomodation .hostel");
+        var $BnB = $(".Accomodation .BbB");
+        var $Hotel = $(".Accomodation .hotel");
+
+        $($Allbtn).on("click", function() {
+            $(this).addClass("active")
+            $Hostelbtn.removeClass("active")
+            $BnBbtn.removeClass("active")
+            $Hotelbtn.removeClass("active")
+            $($All).css({
+                display: "block"
+            });
+        });
+
+        $($Hostelbtn).on("click", function() {
+            $(this).addClass("active")
+            $Allbtn.removeClass("active")
+            $BnBbtn.removeClass("active")
+            $Hotelbtn.removeClass("active")
+            $($All).css({
+                display: "none"
+            });
+            $($Hostel).css({
+                display: "block"
+            });
+        });
+
+        $($BnBbtn).on("click", function() {
+            $(this).addClass("active")
+            $Allbtn.removeClass("active")
+            $Hostelbtn.removeClass("active")
+            $Hotelbtn.removeClass("active")
+            $($All).css({
+                display: "none"
+            });
+            $($BnB).css({
+                display: "block"
+            });
+        });
+        $($Hotelbtn).on("click", function() {
+            $(this).addClass("active")
+            $Allbtn.removeClass("active")
+            $Hostelbtn.removeClass("active")
+            $BnBbtn.removeClass("active")
+            $($All).css({
+                display: "none"
+            });
+            $($Hotel).css({
+                display: "block"
+            });
+        });
     });
 });
