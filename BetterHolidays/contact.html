@@ -19,7 +19,7 @@
               <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Summer Sun</a></li>
               <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun</a></li>
               <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> View All</a></li>
+              <li><a href="destinations.html"><i class="fa fa-caret-right" aria-hidden="true"></i> View All</a></li>
             </ul>
           </div>
         </li>
@@ -29,7 +29,7 @@
               <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Hostel</a></li>
               <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun</a></li>
               <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> View All</a></li>
+              <li><a href="accommodation.html"><i class="fa fa-caret-right" aria-hidden="true"></i> View All</a></li>
             </ul>
           </div>
         </li>
@@ -57,11 +57,11 @@
       <h1>Contact Us</h1>
       <h2>Want to contact us? Fill out the form bellow, send us an email, or message us on twitter to get in touch!</h2>
       <form>
-        <input name="Fname" type="text" placeholder="First Name" autocomplete="off">
-        <input name="Lname" type="text" placeholder="Surname" autocomplete="off"><br>
-        <input name="Email" type="text" placeholder="Email Address" autocomplete="off"><br>
-        <textarea name="Message" rows="10" placeholder="Message" autocomplete="off"></textarea>
-        <button type="submit">Send</button>
+        <input name="Fname" type="text" placeholder="First Name *" autocomplete="off">
+        <input name="Lname" type="text" placeholder="Surname *" autocomplete="off"><br>
+        <input name="Email" type="text" placeholder="Email Address *" autocomplete="off"><br>
+        <textarea name="Message" rows="10" placeholder="Message *" autocomplete="off"></textarea>
+        <button type="submit" onClick="ValidateForm(form)">Send</button>
       </form>
     </div>
   </body>

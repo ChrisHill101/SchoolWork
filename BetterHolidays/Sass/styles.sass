@@ -324,6 +324,10 @@ a
 .allDests
     .Picks
         padding-top: 30px
+
+.Accomodation
+    h2
+        margin-top: 70px
 .topPicks,
 .SpecialOffers,
 .allDests,
@@ -434,7 +438,7 @@ a
                 background-image: url("Images/CostaBlanca.jpg")
                 img
                     opacity: 0
-            #ChalethotelRosanna
+            #St-Anton
                 background-image: url("Images/Chalerhotel.jpg")
                 img
                     opacity: 0
@@ -444,6 +448,30 @@ a
                     opacity: 0
             #WhistlerBlackcomb
                 background-image: url("Images/WhistlerBlackcomb.jpg")
+                img
+                    opacity: 0
+            #ClubTenerife
+                background-image: url("Images/ClubTenerife.jpg")
+                img
+                    opacity: 0
+            #VigiliaParkApartments
+                background-image: url("Images/VigiliaParkApartments.jpg")
+                img
+                    opacity: 0
+            #Flamingo
+                background-image: url("Images/HotelBahiaFlamingo.jpg")
+                img
+                    opacity: 0
+            #Montmartre
+                background-image: url("Images/12_30.jpg")
+                img
+                    opacity: 0
+            #Mola
+                background-image: url("Images/22_30.JPG")
+                img
+                    opacity: 0
+            #Guesthouse
+                background-image: url("Images/HotelBahiaFlamingo.jpg")
                 img
                     opacity: 0
             .item
@@ -497,6 +525,15 @@ a
         max-width: 100%
         margin-bottom: -7px
         +transition(all 10s ease)
+.oops
+    h1
+        font-size: 5.4em
+    h2
+        font-size: 3.5em
+    margin-top: 22vh 
+    footer
+        position: absolute
+        bottom: 0
 .NavSpecialOffers,
 .NavTopPicks,
     display: none
@@ -585,7 +622,7 @@ a
         .Comment
             position: relative
             width: 350px
-            height: auto
+            height: 180px
             border-radius: 6px
             padding: 10px
             background-color: #eee
@@ -707,7 +744,7 @@ a
             height: 40%
             .sliderContent
                 width: 300%
-                margin-left: -100%
+                margin-left: 0
                 justify-content: flex-start
                 display: flex
                 flex-wrap: nowrap
@@ -720,16 +757,8 @@ a
                 width: 100%
                 height: 100%
                 flex: 0
-.Accomodation
-    .Picks
-        .itemPicks
-            h2.Location
-                position: absolute
-                bottom: 0px
-    img 
-        height: 219px
-        width: auto
-            
+.BbB
+    display: none
 .NavComments,
 .NavTopPicks,
 .NavSpecialOffers,
@@ -785,6 +814,7 @@ body.ContactPage
         input[name=Email]
             width: calc(100% - 54px)
         textarea
+            resize: none
             width: calc(100% - 54px)
         button
             cursor: pointer
@@ -796,7 +826,7 @@ body.ContactPage
             transition: all .3s ease-in-out
             outline: 0
             &:hover
-                background-color: rgba(black, 0.2)
+                background-color: #00aaff
                 box-shadow: 0px 2px 15px #666
                 outline: 0
         

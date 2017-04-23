@@ -1,8 +1,21 @@
-function ValidateForm(ContactForm) {
-    if (ContactForm.Fname.value == "") {
+function ValidateForm(Form) {
+    if (Form.Fname.value == "") {
         alert("Please Enter Your First Name");
         return false;
     }
+    if (Form.Lname.value == "") {
+        alert("Please Enter Your Last Name");
+        return false;
+    }
+    if (Form.Email.value == "") {
+        alert("Please Enter Your Email Address");
+        return false;
+    }
+    if (Form.Message.value == "") {
+        alert("Please Enter Your Message");
+        return false;
+    }
+    alert("Thank you " + Form.Fname.value + " " + Form.Lname.value + ". Your message has been sent! Message sent:             " + Form.Message.value);
 
 }
 
@@ -232,7 +245,7 @@ $(function() {
 
         var $All = $(".Accomodation .item");
         var $Hostel = $(".Accomodation .hostel");
-        var $BnB = $(".Accomodation .BbB");
+        var $BnB = $(".Accomodation .BnB");
         var $Hotel = $(".Accomodation .hotel");
 
         $($Allbtn).on("click", function() {

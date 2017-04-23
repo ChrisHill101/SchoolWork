@@ -1,0 +1,102 @@
+doctype
+html(lang="en")
+    head
+        title Caribbean Islands - Better Holidays
+        link(href='styles.css' rel='stylesheet')
+        link(href='Fonts/font-awesome-4.7.0/css/font-awesome.min.css' rel='stylesheet')
+        link(href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    body.Page
+        div#MainBody.Page
+            div#nav.fixed
+                ul.links
+                    li
+                        a.menu(href="home.html") Home
+                    li
+                        a(href="destinations.html")#DestDropDown Destinations <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        #Dest.DropDown    
+                                ul
+                                    li
+                                        a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Summer Sun
+                                    li
+                                        a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun
+                                    li
+                                        a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks
+                                    li
+                                        a(href="destinations.html") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
+                    li
+                        a#AccomDropDown(href="accommodation.html") Accomodation <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        #Accom.DropDown    
+                                ul
+                                    li
+                                        a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Hostel
+                                    li
+                                        a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> Winter Sun
+                                    li
+                                        a(href="#") <i class="fa fa-caret-right" aria-hidden="true"></i> City Breaks
+                                    li
+                                        a(href="accommodation.html") <i class="fa fa-caret-right" aria-hidden="true"></i> View All
+
+                    li
+                        a.menu(href="SpecialOffers.html") Special Offers
+                    li
+                        a.menu(href="contact.html") Contact Us
+                ul.btns
+                    li
+                        a.menu(href="https://twitter.com/" target="_blank") <i class="fa fa-twitter" aria-hidden="true"></i>
+                    li
+                        a.menu(href="mailto:Help@BetterHolidays.com") <i class="fa fa-envelope" aria-hidden="true"></i>
+            Div.MsgPopup.Hidden
+                .Help
+                    i#CloseHelpPopup(class="fa fa-times-circle" aria-hidden="true")
+                    img(src="Images/7043dd1b121f1a9fa077caa6961fccc1.jpeg")
+                    h3 Luke Travis
+                    h5 Offline
+                p Hi! If you need any help don't hesitate to message me and I will get back to you as soon as I can!
+                h4.message Message:
+                textarea(rows="6" placeholder="Message")
+            div.HelpBtn.Show
+                h3 Help
+                i(class="fa fa-question-circle" aria-hidden="true")
+            h1.title Carribean Islands
+            .pageContent 
+                .slider
+                    .sliderContent
+                        .img
+                            img(src="Images/CaribeanIslands.jpg")
+                        .img
+                            img(src="Images/caribbean-escapes-nassau.jpg.rend_.tccom_.1280.960.jpeg")
+                        .img
+                            img(src="Images/caribbean3.jpg")
+                    .NavPage
+                        ul
+                            li
+                                i.fa.fa-circle.btn1.activebtn(aria-hidden='true')
+                            li
+                                i.fa.fa-circle.btn2(aria-hidden='true')
+                            li
+                                i.fa.fa-circle.btn3(aria-hidden='true')
+                .Text
+                    p.Desc Do you wish to go on tour or vacation to the Caribbean? Do you know some facts about this group of islands? Just so you know, the Caribbean is composed of more than seven thousand islands and extends up to two thousand miles dividing the Gulf of Mexico and the Caribbean Sea. A lot of tourists and vacationers travel to the islands via cruise ships and sometimes by air. 
+                    .Info
+                        ul
+                            h2 Attractions
+                            li El Yunque National Forest
+                            li Bequia
+                            li Paradise Island
+                            li Los Haitises National Park
+                        ul
+                            h2 Excursions
+                            li ANCIENT MAYAN RUINS
+                            li SWIM WITH STINGRAYS IN GRAND CAYMAN
+                            li ZIPLINE THROUGH THE JUNGLE IN ANTIGUA
+
+            br 
+            footer
+                p.Disclaimer.container <strong><em>Disclaimer:</em></strong> The text and images are not mine. This website is solely for showing of my coding skills and not my advertising skills for holidays. The text and images are sourced from other websites who own the copyright to them.
+                p Et dolore et sit ut vero. Elitr ad tempor diam dolor assum et sit. Luptatum diam dolor. Rebum sea accumsan eos gubergren eos consequat dolore labore. Takimata aliquyam at sit et autem. Tempor elitr labore sit eirmod rebum vero. Ipsum eu sea facilisis. Ipsum vel eos vero amet voluptua. Et amet at. At sadipscing dolore duo volutpat at et elitr diam ut ullamcorper. Minim iriure aliquyam rebum lorem tempor vel. Aliquyam luptatum at. Facilisis et te nobis autem nonumy et volutpat voluptua dolore aliquip. Vero lorem elitr eos dolor. Dolore sadipscing consectetuer congue tation diam sadipscing et. Nonummy duo voluptua diam et. Clita nulla dolor est amet eirmod blandit consetetur vero. Est aliquam nulla ipsum lorem suscipit esse vel consetetur vulputate. Assum diam ipsum clita nostrud in justo. Gubergren lobortis no est no rebum invidunt. Sit aliquyam invidunt diam consequat takimata. Accusam sanctus. Amet voluptua qui velit erat lorem takimata. 
+                script(src="Jquery3.1.1/jquery-3.1.1.min.js" rel="script")
+                script(src="js.js" rel="script")

@@ -402,6 +402,9 @@ a {
 .allDests .Picks {
   padding-top: 30px; }
 
+.Accomodation h2 {
+  margin-top: 70px; }
+
 .topPicks,
 .SpecialOffers,
 .allDests,
@@ -641,15 +644,15 @@ a {
         .allDests .Picks .itemPicks #CostaBlanca img,
         .Accomodation .Picks .itemPicks #CostaBlanca img {
           opacity: 0; }
-      .topPicks .Picks .itemPicks #ChalethotelRosanna,
-      .SpecialOffers .Picks .itemPicks #ChalethotelRosanna,
-      .allDests .Picks .itemPicks #ChalethotelRosanna,
-      .Accomodation .Picks .itemPicks #ChalethotelRosanna {
+      .topPicks .Picks .itemPicks #St-Anton,
+      .SpecialOffers .Picks .itemPicks #St-Anton,
+      .allDests .Picks .itemPicks #St-Anton,
+      .Accomodation .Picks .itemPicks #St-Anton {
         background-image: url("Images/Chalerhotel.jpg"); }
-        .topPicks .Picks .itemPicks #ChalethotelRosanna img,
-        .SpecialOffers .Picks .itemPicks #ChalethotelRosanna img,
-        .allDests .Picks .itemPicks #ChalethotelRosanna img,
-        .Accomodation .Picks .itemPicks #ChalethotelRosanna img {
+        .topPicks .Picks .itemPicks #St-Anton img,
+        .SpecialOffers .Picks .itemPicks #St-Anton img,
+        .allDests .Picks .itemPicks #St-Anton img,
+        .Accomodation .Picks .itemPicks #St-Anton img {
           opacity: 0; }
       .topPicks .Picks .itemPicks #Cervinia,
       .SpecialOffers .Picks .itemPicks #Cervinia,
@@ -670,6 +673,66 @@ a {
         .SpecialOffers .Picks .itemPicks #WhistlerBlackcomb img,
         .allDests .Picks .itemPicks #WhistlerBlackcomb img,
         .Accomodation .Picks .itemPicks #WhistlerBlackcomb img {
+          opacity: 0; }
+      .topPicks .Picks .itemPicks #ClubTenerife,
+      .SpecialOffers .Picks .itemPicks #ClubTenerife,
+      .allDests .Picks .itemPicks #ClubTenerife,
+      .Accomodation .Picks .itemPicks #ClubTenerife {
+        background-image: url("Images/ClubTenerife.jpg"); }
+        .topPicks .Picks .itemPicks #ClubTenerife img,
+        .SpecialOffers .Picks .itemPicks #ClubTenerife img,
+        .allDests .Picks .itemPicks #ClubTenerife img,
+        .Accomodation .Picks .itemPicks #ClubTenerife img {
+          opacity: 0; }
+      .topPicks .Picks .itemPicks #VigiliaParkApartments,
+      .SpecialOffers .Picks .itemPicks #VigiliaParkApartments,
+      .allDests .Picks .itemPicks #VigiliaParkApartments,
+      .Accomodation .Picks .itemPicks #VigiliaParkApartments {
+        background-image: url("Images/VigiliaParkApartments.jpg"); }
+        .topPicks .Picks .itemPicks #VigiliaParkApartments img,
+        .SpecialOffers .Picks .itemPicks #VigiliaParkApartments img,
+        .allDests .Picks .itemPicks #VigiliaParkApartments img,
+        .Accomodation .Picks .itemPicks #VigiliaParkApartments img {
+          opacity: 0; }
+      .topPicks .Picks .itemPicks #Flamingo,
+      .SpecialOffers .Picks .itemPicks #Flamingo,
+      .allDests .Picks .itemPicks #Flamingo,
+      .Accomodation .Picks .itemPicks #Flamingo {
+        background-image: url("Images/HotelBahiaFlamingo.jpg"); }
+        .topPicks .Picks .itemPicks #Flamingo img,
+        .SpecialOffers .Picks .itemPicks #Flamingo img,
+        .allDests .Picks .itemPicks #Flamingo img,
+        .Accomodation .Picks .itemPicks #Flamingo img {
+          opacity: 0; }
+      .topPicks .Picks .itemPicks #Montmartre,
+      .SpecialOffers .Picks .itemPicks #Montmartre,
+      .allDests .Picks .itemPicks #Montmartre,
+      .Accomodation .Picks .itemPicks #Montmartre {
+        background-image: url("Images/12_30.jpg"); }
+        .topPicks .Picks .itemPicks #Montmartre img,
+        .SpecialOffers .Picks .itemPicks #Montmartre img,
+        .allDests .Picks .itemPicks #Montmartre img,
+        .Accomodation .Picks .itemPicks #Montmartre img {
+          opacity: 0; }
+      .topPicks .Picks .itemPicks #Mola,
+      .SpecialOffers .Picks .itemPicks #Mola,
+      .allDests .Picks .itemPicks #Mola,
+      .Accomodation .Picks .itemPicks #Mola {
+        background-image: url("Images/22_30.JPG"); }
+        .topPicks .Picks .itemPicks #Mola img,
+        .SpecialOffers .Picks .itemPicks #Mola img,
+        .allDests .Picks .itemPicks #Mola img,
+        .Accomodation .Picks .itemPicks #Mola img {
+          opacity: 0; }
+      .topPicks .Picks .itemPicks #Guesthouse,
+      .SpecialOffers .Picks .itemPicks #Guesthouse,
+      .allDests .Picks .itemPicks #Guesthouse,
+      .Accomodation .Picks .itemPicks #Guesthouse {
+        background-image: url("Images/HotelBahiaFlamingo.jpg"); }
+        .topPicks .Picks .itemPicks #Guesthouse img,
+        .SpecialOffers .Picks .itemPicks #Guesthouse img,
+        .allDests .Picks .itemPicks #Guesthouse img,
+        .Accomodation .Picks .itemPicks #Guesthouse img {
           opacity: 0; }
       .topPicks .Picks .itemPicks .item,
       .SpecialOffers .Picks .itemPicks .item,
@@ -762,6 +825,16 @@ a {
     -webkit-transition: all 10s ease;
     -moz-transition: all 10s ease;
     transition: all 10s ease; }
+
+.oops {
+  margin-top: 22vh; }
+  .oops h1 {
+    font-size: 5.4em; }
+  .oops h2 {
+    font-size: 3.5em; }
+  .oops footer {
+    position: absolute;
+    bottom: 0; }
 
 .NavSpecialOffers,
 .NavTopPicks {
@@ -879,7 +952,7 @@ a {
     .CommentSection .topComments .Comment {
       position: relative;
       width: 350px;
-      height: auto;
+      height: 180px;
       border-radius: 6px;
       padding: 10px;
       background-color: #eee; }
@@ -1015,7 +1088,7 @@ a {
     height: 40%; }
     .Page .pageContent .slider .sliderContent {
       width: 300%;
-      margin-left: -100%;
+      margin-left: 0;
       -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
       justify-content: flex-start;
@@ -1037,13 +1110,8 @@ a {
       -ms-flex: 0;
       flex: 0; }
 
-.Accomodation .Picks .itemPicks h2.Location {
-  position: absolute;
-  bottom: 0px; }
-
-.Accomodation img {
-  height: 219px;
-  width: auto; }
+.BbB {
+  display: none; }
 
 .NavComments,
 .NavTopPicks,
@@ -1112,6 +1180,7 @@ body.ContactPage {
     .Contact form input[name=Email] {
       width: calc(100% - 54px); }
     .Contact form textarea {
+      resize: none;
       width: calc(100% - 54px); }
     .Contact form button {
       cursor: pointer;
@@ -1123,7 +1192,7 @@ body.ContactPage {
       transition: all .3s ease-in-out;
       outline: 0; }
       .Contact form button:hover {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: #00aaff;
         box-shadow: 0px 2px 15px #666;
         outline: 0; }
 
