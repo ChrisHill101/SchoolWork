@@ -17,7 +17,7 @@ function ValidateForm(Form) {
     }
     alert("Thank you " + Form.Fname.value + " " + Form.Lname.value + ". Your message has been sent! Message sent:             " + Form.Message.value);
 
-}
+};
 
 $(function() {
     "Use Strict"
